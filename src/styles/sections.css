@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@layer section {
+    .hero-section {
+        @apply bg-blue-800 text-white py-16;
+    }
+
+    .hero-container {
+        @apply max-w-7xl mx-auto px-6 text-center;
+    }
+
+    .hero-title {
+        @apply text-4xl font-bold;
+    }
+
+    .hero-subtitle {
+        @apply mt-4 text-lg;
+    }
+
+    .testimonial-section {
+        @apply bg-gray-100 py-16;
+      }
+    
+      .testimonial-container {
+        @apply max-w-7xl mx-auto px-6 text-center;
+      }
+    
+      .testimonial-title {
+        @apply text-3xl font-semibold;
+      }
+    
+      .testimonial-grid {
+        @apply mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6;
+      }
+    
+      .testimonial-card {
+        @apply bg-white p-6 rounded-lg shadow-md;
+      }
+    
+      .testimonial-text {
+        @apply text-lg italic;
+      }
+    
+      .testimonial-author {
+        @apply mt-4 text-gray-600;
+      }
+}

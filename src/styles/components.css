@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+
+@layer components {
+
+    .button {
+        @apply px-6 py-2 rounded-lg text-white;
+    }
+
+    .button-primary {
+        @apply bg-blue-800 hover:bg-blue-600;
+    }
+
+    .button-secondary {
+        @apply bg-gray-800 hover:bg-gray-600;
+    }
+
+    .card {
+        @apply bg-white shadow-md rounded-lg overflow-hidden;
+    }
+
+    .card-content {
+        @apply p-6;
+    }
+
+    .card-title {
+        @apply text-xl font-semibold;
+    }
+
+    .card-text {
+        @apply mt-2 text-gray-600;
+    }
+
+    .card-footer {
+        @apply px-6 pb-6;
+    }
+
+    .card-link {
+        @apply text-blue-800 hover:underline;
+    }
+
+}

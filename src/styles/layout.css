@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@layer layout {
+    .navbar {
+        @apply bg-purple-900 text-white py-4;
+    }
+
+    .navbar-container {
+        @apply max-w-7xl mx-auto px-6 flex justify-between items-center;
+    }
+
+    .navbar-brand {
+        @apply text-2xl font-bold;
+    }
+
+    .navbar-links {
+        @apply flex;
+    }
+
+    .navbar-link {
+        @apply mr-4;
+    }
+
+    .footer {
+        @apply bg-gray-800 text-white py-6;
+    }
+
+    .footer-container {
+        @apply max-w-7xl mx-auto px-6 text-center;
+    }
+}

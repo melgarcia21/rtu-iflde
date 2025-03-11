@@ -1,4 +1,6 @@
 const Footer = () => {
+
+  // TODO: Add social media links
   return (
     <footer className="footer">
       <div className="footer-container">

@@ -15,10 +15,6 @@ const testimonials = [
     text: "The platform is user-friendly and the content is top-notch.",
     author: "Michael Brown, Professional"
   },
-  {
-    text: "I think for me, the best part is Brian as CEO MVP",
-    author: "Brian Banaynal"
-  },
 ];
 
 const TestimonialSection = () => {

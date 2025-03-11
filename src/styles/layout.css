@@ -10,7 +10,7 @@
     }
 
     .navbar-brand {
-        @apply text-2xl font-bold;
+        @apply text-2xl font-medium hover:text-purple-300;
     }
 
     .navbar-links {
@@ -18,7 +18,7 @@
     }
 
     .navbar-link {
-        @apply mr-4;
+        @apply mr-4 font-bold hover:text-purple-300;
     }
 
     .footer {

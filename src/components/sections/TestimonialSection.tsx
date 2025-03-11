@@ -1,29 +1,18 @@
-const testimonials = [
-  {
-    text: "FlexiLearnPro has transformed my career. The flexible learning path was perfect for my schedule!",
-    author: "John Doe, Graduate"
-  },
-  {
-    text: "The courses are well-structured and the instructors are very knowledgeable.",
-    author: "Jane Smith, Student"
-  },
-  {
-    text: "I love the community and the support I get from other learners.",
-    author: "Emily Johnson, Learner"
-  },
-  {
-    text: "The platform is user-friendly and the content is top-notch.",
-    author: "Michael Brown, Professional"
-  },
-];
+import React from 'react';
+import testimonials from '../../data/testimonials.json';
 
-const TestimonialSection = () => {
+type Testimonial = {
+  text: string;
+  author: string;
+};
+
+const TestimonialSection: React.FC = () => {
   return (
     <section className="testimonial-section">
       <div className="testimonial-container">
         <h2 className="testimonial-title">What Our Students Say</h2>
         <div className="testimonial-grid">
-          {testimonials.map((testimonial, index) => (
+          {testimonials.map((testimonial: Testimonial, index: number) => (
             <div key={index} className="testimonial-card">
               <p className="testimonial-text">&quot;{testimonial.text}&quot;</p>
               <p className="testimonial-author">- {testimonial.author}</p>

@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Professional Development",
+    "content": "Courses for career growth.",
+    "link": "/programs/1"
+  },
+  {
+    "title": "Remote Learning Certification",
+    "content": "Courses for distance learners.",
+    "link": "/programs/2"
+  }
+]

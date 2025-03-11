@@ -1,47 +1,126 @@
 @import "tailwindcss";
 
 @layer section {
-    .hero-section {
-        @apply bg-blue-800 text-white py-16;
-    }
+  /** Hero **/
+  .hero-section {
+    @apply bg-blue-800 text-white py-16;
+  }
 
-    .hero-container {
-        @apply max-w-7xl mx-auto px-6 text-center;
-    }
+  .hero-container {
+    @apply max-w-7xl mx-auto px-6 text-center;
+  }
 
-    .hero-title {
-        @apply text-4xl font-bold;
-    }
+  .hero-title {
+    @apply text-4xl font-bold;
+  }
 
-    .hero-subtitle {
-        @apply mt-4 text-lg;
-    }
+  .hero-subtitle {
+    @apply mt-4 text-lg;
+  }
 
-    .testimonial-section {
-        @apply bg-gray-100 py-16;
-      }
-    
-      .testimonial-container {
-        @apply max-w-7xl mx-auto px-6 text-center;
-      }
-    
-      .testimonial-title {
-        @apply text-3xl font-semibold;
-      }
-    
-      .testimonial-grid {
-        @apply mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6;
-      }
-    
-      .testimonial-card {
-        @apply bg-white p-6 rounded-lg shadow-md;
-      }
-    
-      .testimonial-text {
-        @apply text-lg italic;
-      }
-    
-      .testimonial-author {
-        @apply mt-4 text-gray-600;
-      }
+  /** Testimonials **/
+  .testimonial-section {
+    @apply bg-gray-100 py-16;
+  }
+
+  .testimonial-container {
+    @apply max-w-7xl mx-auto px-6 text-center;
+  }
+
+  .testimonial-title {
+    @apply text-3xl font-semibold;
+  }
+
+  .testimonial-grid {
+    @apply mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6;
+  }
+
+  .testimonial-card {
+    @apply bg-white p-6 rounded-lg shadow-md;
+  }
+
+  .testimonial-text {
+    @apply text-lg italic;
+  }
+
+  .testimonial-author {
+    @apply mt-4 text-gray-600;
+  }
+
+  /** Programs **/
+  .programs-section {
+    @apply py-16 px-6 max-w-7xl mx-auto;
+  }
+
+  .programs-title {
+    @apply text-3xl font-bold text-center;
+  }
+
+  .programs-grid {
+    @apply mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6;
+  }
+
+  /** Program Page **/
+  .program-section {
+    @apply py-16 px-6 max-w-7xl mx-auto;
+  }
+
+  .program-title {
+    @apply text-4xl font-bold text-center;
+  }
+
+  .program-content {
+    @apply mt-8 text-lg text-gray-700;
+  }
+
+  /** FAQ **/
+  .faq-section {
+    @apply py-16 px-6 max-w-7xl mx-auto;
+  }
+
+  .faq-title {
+    @apply text-3xl font-bold text-center;
+  }
+
+  .faq-item {
+    @apply mt-8;
+  }
+
+  .faq-question {
+    @apply text-xl font-semibold;
+  }
+
+  .faq-answer {
+    @apply text-lg text-gray-700;
+  }
+
+  /** About **/
+  .about-section {
+    @apply py-16 px-6 max-w-7xl mx-auto;
+  }
+
+  .about-title {
+    @apply text-3xl font-bold text-center;
+  }
+
+  .about-description {
+    @apply mt-4 text-lg text-gray-700 text-center;
+  }
+
+  .about-details {
+    @apply mt-8 text-lg text-gray-600;
+  }
+
+  /** Contact **/
+  .contact-section {
+    @apply py-16 px-6 max-w-7xl mx-auto;
+  }
+
+  .contact-title {
+    @apply text-3xl font-bold text-center;
+  }
+
+  .contact-description {
+    @apply mt-4 text-lg text-center text-gray-700;
+  }
 }

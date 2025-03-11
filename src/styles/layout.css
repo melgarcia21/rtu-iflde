@@ -1,6 +1,19 @@
 @import "tailwindcss";
 
 @layer layout {
+    html, body {
+        @apply h-full;
+    }
+
+    #__next {
+        @apply flex flex-col min-h-screen;
+    }
+
+    main {
+        @apply flex-grow;
+    }
+
+    /** Navbar **/
     .navbar {
         @apply bg-purple-900 text-white py-4;
     }
@@ -21,8 +34,9 @@
         @apply mr-4 font-bold hover:text-purple-300;
     }
 
+    /** Footer **/
     .footer {
-        @apply bg-gray-800 text-white py-6;
+        @apply bg-gray-800 text-white py-6 mt-auto;
     }
 
     .footer-container {

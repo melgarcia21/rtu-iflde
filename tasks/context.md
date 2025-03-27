@@ -41,7 +41,13 @@ This directory contains the different pages of the application. Each file in thi
 
 ### styles
 
-This directory contains global and component-specific styles. The main global stylesheet is `globals.css`.
+This directory contains global and component-specific styles. The main global stylesheet is `globals.css`. It also includes:
+
+- `base.css`: Base styles and CSS variables.
+- `components.css`: Styles for individual components.
+- `layout.css`: Styles for layout components like Navbar and Footer.
+- `sections.css`: Styles for different sections of the application.
+- `utilities.css`: Utility classes for common styles.
 
 # Pages and Content
 

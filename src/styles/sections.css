@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 @layer section {
+
   /** Hero **/
   .hero-section {
     @apply bg-blue-800 text-white py-16;

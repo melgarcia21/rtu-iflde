@@ -4,15 +4,11 @@ import { PhoneIcon, EmailIcon } from '../ui/Icons';
 
 const Header = () => {
   return (
-    <div
-      className="header-section"
-      style={{ backgroundImage: `url('/images/header/rtu-iflde-cover.png')` }}
-    >
-      {/* Purple Overlay */}
-      <div className="header-overlay"></div>
+    <div className="header-section">
 
       {/* Content Wrapper */}
       <div className="header-content">
+
         {/* Top Left Section: Logo and University Name */}
         <div className="header-logo-section">
           <Image

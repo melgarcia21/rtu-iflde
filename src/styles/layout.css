@@ -17,15 +17,12 @@
 
     /** Header **/
     .header-section {
-        @apply relative bg-cover bg-center text-white min-h-[400px] md:min-h-[450px] font-sans overflow-hidden;
-    }
-
-    .header-overlay {
-        @apply absolute inset-0 bg-purple-800 opacity-70 z-0;
+        @apply relative bg-cover bg-center text-white font-sans overflow-hidden;
+        background-image: url('/images/header/rtu-iflde-cover.png'); 
     }
 
     .header-content {
-        @apply relative z-10 h-full flex flex-col p-6 md:p-10;
+        @apply relative z-10 h-full flex flex-col p-4 md:p-10;
     }
 
     .header-logo-section {
@@ -51,6 +48,7 @@
     .header-university-location {
         @apply text-xs md:text-sm;
     }
+
 
     .header-center-section {
         @apply flex items-center my-4 md:my-6 lg:my-8 ml-0 md:ml-16 lg:ml-24;
@@ -92,26 +90,78 @@
         @apply text-xs md:text-sm lg:text-base;
     }
 
+
     /** Navbar **/
     .navbar {
-        @apply bg-purple-900 text-white py-4;
+        @apply bg-purple-900 text-white py-4 transition-all duration-300;
     }
-
+    
+    .sticky-navbar {
+        @apply fixed top-0 left-0 w-full bg-purple-900/70 backdrop-blur-md z-50 shadow-lg;
+    }
+    
     .navbar-container {
         @apply max-w-7xl mx-auto px-6 flex justify-between items-center;
     }
-
+    
     .navbar-brand {
-        @apply text-2xl font-medium hover:text-purple-300;
+        @apply text-3xl font-bold hover:text-purple-300;
+        font-family: 'Poppins', sans-serif;
     }
-
+    
+    .iflde-highlight {
+        @apply text-yellow-400;
+    }
+    
     .navbar-links {
-        @apply flex;
+        @apply flex space-x-12;
+    }
+    
+    .navbar-link {
+        @apply flex items-center space-x-2 text-lg font-medium hover:text-purple-300;
+    }
+    
+    .navbar-icon {
+        @apply h-5 w-5;
+    }
+    
+    .navbar-actions {
+        @apply flex items-center space-x-4;
+    }
+    
+    .profile-button {
+        @apply flex items-center justify-center w-10 h-10 rounded-full bg-white hover:bg-gray-600 transition-all duration-300;
+    }
+    
+    .profile-icon {
+        @apply h-6 w-6 text-black;
     }
 
-    .navbar-link {
-        @apply mr-4 font-bold hover:text-purple-300;
+    .dark-mode-switch {
+        @apply flex items-center justify-center w-10 h-10 rounded-full bg-white hover:bg-gray-600 transition-all duration-300;
     }
+
+    .dark-mode-icon {
+        @apply h-6 w-6 text-black;
+    }
+
+    /** Dark Mode **/
+    :root {
+        --bg-color: #ffffff;
+        --text-color: #000000;
+    }
+
+    .dark {
+        --bg-color: #1a202c;
+        --text-color: #ffffff;
+    }
+
+    body {
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        transition: background-color 0.3s, color 0.3s;
+    }
+
 
     /** Footer **/
     .footer {

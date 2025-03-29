@@ -93,11 +93,11 @@
 
     /** Navbar **/
     .navbar {
-        @apply bg-purple-900 text-white py-4 transition-all duration-300;
+        @apply bg-[#35193E] text-white py-4 transition-all duration-300;
     }
     
     .sticky-navbar {
-        @apply fixed top-0 left-0 w-full bg-purple-900/70 backdrop-blur-md z-50 shadow-lg;
+        @apply fixed top-0 left-0 w-full bg-[#35193E]/70 backdrop-blur-md z-50 shadow-lg;
     }
     
     .navbar-container {
@@ -118,11 +118,35 @@
     }
     
     .navbar-link {
-        @apply flex items-center space-x-2 text-lg font-medium hover:text-purple-300;
+        @apply flex items-center space-x-2 text-lg font-medium relative;
     }
     
     .navbar-icon {
         @apply h-5 w-5;
+    }
+
+    .icon-wrapper {
+        @apply relative w-5 h-5;
+    }
+    
+    .icon-outline {
+        @apply absolute inset-0 transition-opacity duration-100 opacity-100 group-hover:opacity-0;
+    }
+    
+    .icon-solid {
+        @apply absolute inset-0 transition-opacity duration-100 opacity-0 group-hover:opacity-100;
+    }
+    
+    .link-text {
+        @apply relative;
+    }
+    
+    .link-text::after {
+        @apply content-[''] absolute left-0 bottom-0 w-0 h-0.5 bg-purple-300 transition-all duration-100 ease-in-out;
+    }
+    
+    .navbar-link:hover .link-text::after {
+        @apply w-full;
     }
     
     .navbar-actions {

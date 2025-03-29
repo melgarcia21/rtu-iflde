@@ -6,7 +6,7 @@ The 1987 Philippine Constitution declares that the State shall protect, foster, 
 
 Furthermore, the State shall ensure and protect academic freedom, promoting its exercise and observance for:
 - Continuing intellectual growth
-- Advancement of learning and research
+- Advancement of learning and research  
 - Development of responsible and effective leadership
 - Education of high-level and middle-level professionals
 - Enrichment of historical and cultural heritage
@@ -183,4 +183,3 @@ Digital badges may be awarded for credit or non-credit programs and can be share
 HEIs must provide adequate instructional and administrative support systems to enhance student learning experiences and facilitate the achievement of micro-credential learning outcomes. These support services should be accessible to all students.
 
 For HEIs partnering with industry providers, a formal MOA is required to ensure collaboration and alignment with academic and professional standards.
-

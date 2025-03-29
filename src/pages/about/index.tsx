@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import aboutContent from '../data/about.json';
+import aboutContent from '../../data/about.json';
 
 const About = () => {
   const [content, setContent] = useState({

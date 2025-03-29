@@ -1,5 +1,5 @@
-import Card from '../components/ui/Card';
-import programs from '../data/programs.json';
+import Card from '../../components/ui/Card';
+import programs from '../../data/programs.json';
 
 type Program = {
   title: string;

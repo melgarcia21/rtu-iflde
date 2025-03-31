@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { PhoneIcon, EmailIcon } from '../ui/Icons';
+// import { PhoneIcon, EmailIcon } from '../ui/Icons';
 
 const Header = () => {
   return (
@@ -54,32 +54,7 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Bottom Right Section: Contact Info */}
-        <div className="header-contact-section">
-          <a
-            href="http://rtu.edu.ph"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="header-contact-link"
-          >
-            rtu.edu.ph
-          </a>
-          {/* Phone */}
-          <div className="header-contact-item">
-            <PhoneIcon />
-            <span className="header-contact-text">(02) 8534-8627</span>
-          </div>
-          {/* Email */}
-          <div className="header-contact-item">
-            <EmailIcon />
-            <a
-              href="mailto:iflde@rtu.edu.ph"
-              className="header-contact-link"
-            >
-              iflde@rtu.edu.ph
-            </a>
-          </div>
-        </div>
+
       </div>
     </div>
   );

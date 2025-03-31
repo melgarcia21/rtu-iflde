@@ -18,7 +18,7 @@
     /** Header **/
     .header-section {
         @apply relative bg-cover bg-center text-white font-sans overflow-hidden;
-        background-image: url('/images/header/rtu-iflde-cover.png'); 
+        background-image: url('/images/header/rtu-iflde-cover.png');
     }
 
     .header-content {
@@ -70,129 +70,73 @@
         @apply text-sm md:text-base lg:text-lg;
     }
 
-    .header-contact-section {
-        @apply flex justify-end items-center space-x-4 md:space-x-6 mt-auto;
-    }
-
-    .header-contact-link {
-        @apply text-xs md:text-sm lg:text-base hover:underline;
-    }
-
-    .header-contact-item {
-        @apply flex items-center space-x-1 md:space-x-2;
-    }
-
-    .header-contact-icon {
-        @apply h-4 w-4 md:h-5 md:w-5;
-    }
-
-    .header-contact-text {
-        @apply text-xs md:text-sm lg:text-base;
-    }
-
-
     /** Navbar **/
     .navbar {
-        @apply bg-[#35193E] text-white py-4 transition-all duration-300;
+        @apply bg-[#35193E] text-white py-6 transition-all duration-300;
     }
-    
+
     .sticky-navbar {
-        @apply fixed top-0 left-0 w-full bg-[#35193E]/70 backdrop-blur-md z-50 shadow-lg;
+        @apply fixed top-0 left-0 w-full bg-[#35193E] z-50 shadow-lg;
     }
-    
+
+    .sticky-placeholder {
+        height: 100px;
+    }
+
     .navbar-container {
-        @apply max-w-7xl mx-auto px-6 flex justify-between items-center;
+        @apply max-w-7xl mx-auto px-8 flex justify-between items-center;
     }
-    
+
     .navbar-brand {
         @apply text-3xl font-bold hover:text-purple-300;
         font-family: 'Poppins', sans-serif;
     }
-    
-    .iflde-highlight {
-        @apply text-yellow-400;
-    }
-    
+
     .navbar-links {
         @apply flex space-x-12;
     }
-    
+
     .navbar-link {
-        @apply flex items-center space-x-2 text-lg font-medium relative;
+        @apply flex items-center space-x-2 text-xl font-medium relative;
     }
-    
+
     .navbar-icon {
-        @apply h-5 w-5;
+        @apply h-6 w-6;
     }
 
     .icon-wrapper {
-        @apply relative w-5 h-5;
+        @apply relative w-6 h-6;
     }
-    
+
     .icon-outline {
         @apply absolute inset-0 transition-opacity duration-100 opacity-100 group-hover:opacity-0;
     }
-    
+
     .icon-solid {
         @apply absolute inset-0 transition-opacity duration-100 opacity-0 group-hover:opacity-100;
     }
-    
+
     .link-text {
         @apply relative;
     }
-    
+
     .link-text::after {
         @apply content-[''] absolute left-0 bottom-0 w-0 h-0.5 bg-purple-300 transition-all duration-100 ease-in-out;
     }
-    
+
     .navbar-link:hover .link-text::after {
         @apply w-full;
     }
-    
+
     .navbar-actions {
         @apply flex items-center space-x-4;
     }
-    
+
     .profile-button {
         @apply flex items-center justify-center w-10 h-10 rounded-full bg-white hover:bg-gray-600 transition-all duration-300;
     }
-    
+
     .profile-icon {
         @apply h-6 w-6 text-black;
-    }
-
-    .dark-mode-switch {
-        @apply flex items-center justify-center w-10 h-10 rounded-full bg-white hover:bg-gray-600 transition-all duration-300;
-    }
-
-    .dark-mode-icon {
-        @apply h-6 w-6 text-black;
-    }
-
-    /** Dark Mode **/
-    :root {
-        --bg-color: #ffffff;
-        --text-color: #000000;
-    }
-
-    .dark {
-        --bg-color: #1a202c;
-        --text-color: #ffffff;
-    }
-
-    body {
-        background-color: var(--bg-color);
-        color: var(--text-color);
-        transition: background-color 0.3s, color 0.3s;
-    }
-
-
-    /** Footer **/
-    .footer {
-        @apply bg-gray-800 text-white py-6 mt-auto;
-    }
-
-    .footer-container {
-        @apply max-w-7xl mx-auto px-6 text-center;
     }
 }

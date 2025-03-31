@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-// import { PhoneIcon, EmailIcon } from '../ui/Icons';
 
 const Header = () => {
   return (
@@ -53,7 +52,6 @@ const Header = () => {
             </p>
           </div>
         </div>
-
 
       </div>
     </div>

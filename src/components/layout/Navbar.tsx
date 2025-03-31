@@ -1,12 +1,15 @@
-import Link from "next/link";
 import { useEffect, useState } from "react";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 import {
   RectangleStackIcon as RectangleStackOutline,
   AcademicCapIcon as AcademicCapOutline,
   NewspaperIcon as NewspaperOutline,
   PhoneIcon as PhoneOutline,
-  UserIcon,
+  Bars3Icon as MenuIcon, 
+  XMarkIcon as XIcon, 
+  UserCircleIcon as UserIcon,
 } from "@heroicons/react/24/outline";
 
 import {
@@ -18,6 +21,9 @@ import {
 
 const Navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isClosing, setIsClosing] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,6 +37,39 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const handleMenuToggle = () => {
+    if (isMobileMenuOpen) {
+      setIsClosing(true);
+      setTimeout(() => {
+        setIsMobileMenuOpen(false);
+        setIsClosing(false);
+      }, 200);
+    } else {
+      setIsMobileMenuOpen(true);
+      setIsClosing(false);
+    }
+  };
+
+  const handleLinkClick = () => {
+    setIsClosing(true);
+    setTimeout(() => {
+      setIsMobileMenuOpen(false);
+      setIsClosing(false);
+    }, 200);
+  };
+
+  useEffect(() => {
+    const handleRouteChange = () => {
+      // Prevent scroll reset on route change
+      window.history.scrollRestoration = "manual";
+    };
+
+    router.events.on("routeChangeStart", handleRouteChange);
+    return () => {
+      router.events.off("routeChangeStart", handleRouteChange);
+    };
+  }, [router]);
 
   const links = [
     {
@@ -61,33 +100,75 @@ const Navbar = () => {
 
   return (
     <>
-    {isSticky && <div className="sticky-placeholder" />}
-    <nav className={`navbar ${isSticky ? "sticky-navbar" : ""}`}>
+      {isSticky && <div className="sticky-placeholder" />}
+      <nav className={`navbar ${isSticky ? "sticky-navbar" : ""}`}>
         <div className="navbar-container">
           {/* Brand */}
-          <Link href="/" className="navbar-brand">
+          <Link href="/" scroll={false} className="navbar-brand">
             RTU <span className="iflde-highlight">IFLDE</span>
           </Link>
 
-          {/* Links */}
-          <div className="navbar-links">
+          {/* Desktop Navigation Links */}
+          <div className="navbar-links hidden md:flex">
             {links.map((link, index) => (
-              <Link key={index} href={link.href} className="navbar-link group">
+              <Link
+                key={index}
+                href={link.href}
+                scroll={false}
+                className="navbar-link group"
+              >
                 <span className="icon-wrapper">
-                  <span className="icon-outline">{link.iconOutline}</span>
-                  <span className="icon-solid">{link.iconSolid}</span>
+                  {router.pathname === link.href ? link.iconSolid : link.iconOutline}
                 </span>
                 <span className="link-text">{link.label}</span>
               </Link>
             ))}
           </div>
 
-          <div className="navbar-actions">
-            {/* Profile/User Icon */}
-            <button className="profile-button" aria-label="User Profile">
-              <UserIcon className="profile-icon" />
+          <div className="flex items-center space-x-4">
+            {/* Mobile Menu Button */}
+            <button 
+              className="mobile-menu-button"
+              onClick={handleMenuToggle}
+              aria-label="Toggle menu"
+            >
+              {isMobileMenuOpen ? (
+                <XIcon className="h-6 w-6" />
+              ) : (
+                <MenuIcon className="h-6 w-6" />
+              )}
             </button>
+
+            {/* Profile Icon */}
+            <div className="navbar-actions">
+              <button className="profile-button" aria-label="User Profile">
+                <UserIcon className="profile-icon" />
+              </button>
+            </div>
           </div>
+        </div>
+
+        {/* Mobile Navigation Menu */}
+        <div
+          className={`mobile-menu ${isMobileMenuOpen ? 'flex' : ''} ${isClosing ? 'closing' : ''}`}
+          role="dialog"
+          aria-hidden={!isMobileMenuOpen}
+        >
+          {links.map((link, index) => (
+            <Link
+              key={index}
+              href={link.href}
+              scroll={false}
+              className="mobile-menu-link"
+              role="menuitem"
+              onClick={handleLinkClick}
+            >
+              <span className="icon-wrapper">
+                {router.pathname === link.href ? link.iconSolid : link.iconOutline}
+              </span>
+              <span className="link-text">{link.label}</span>
+            </Link>
+          ))}
         </div>
       </nav>
     </>

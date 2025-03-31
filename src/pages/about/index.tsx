@@ -17,7 +17,9 @@ const About = () => {
       <h1 className="about-title">{content.title}</h1>
       <p className="about-description">{content.description}</p>
       <p className="about-details">{content.details}</p>
+
     </section>
+    
   );
 };
 

@@ -2,6 +2,8 @@
 
 @layer layout {
 
+    /* Base Layout Styles
+  ----------------------------------------*/
     html,
     body {
         @apply h-full;
@@ -15,7 +17,8 @@
         @apply flex-grow;
     }
 
-    /** Header **/
+    /* Header Styles
+  ----------------------------------------*/
     .header-section {
         @apply relative bg-cover bg-center text-white font-sans overflow-hidden;
         background-image: url('/images/header/rtu-iflde-cover.png');
@@ -25,6 +28,7 @@
         @apply relative z-10 h-full flex flex-col p-4 md:p-10;
     }
 
+    /* Header Logo Section */
     .header-logo-section {
         @apply flex items-center mb-auto;
     }
@@ -37,6 +41,7 @@
         @apply w-px h-10 md:h-12 bg-white mr-3 md:mr-4;
     }
 
+    /* Header Text Content */
     .header-university-text {
         @apply flex flex-col justify-center;
     }
@@ -48,7 +53,6 @@
     .header-university-location {
         @apply text-xs md:text-sm;
     }
-
 
     .header-center-section {
         @apply flex items-center my-4 md:my-6 lg:my-8 ml-0 md:ml-16 lg:ml-24;
@@ -70,73 +74,143 @@
         @apply text-sm md:text-base lg:text-lg;
     }
 
-    /** Navbar **/
+    /* Navbar Styles
+----------------------------------------*/
+    /* Main Navbar */
     .navbar {
-        @apply bg-[#35193E] text-white py-6 transition-all duration-300;
-    }
-
-    .sticky-navbar {
-        @apply fixed top-0 left-0 w-full bg-[#35193E] z-50 shadow-lg;
-    }
-
-    .sticky-placeholder {
-        height: 100px;
+        @apply bg-[#35193E] text-white transition-all duration-300 relative py-1 md:py-4 z-50;
     }
 
     .navbar-container {
-        @apply max-w-7xl mx-auto px-8 flex justify-between items-center;
+        @apply max-w-7xl mx-auto px-4 flex items-center justify-between;
+        /* Mobile height */
+        @apply h-12;
+        /* Desktop height */
+        @apply md:h-14;
     }
 
+    /* Navbar Brand */
     .navbar-brand {
-        @apply text-3xl font-bold hover:text-purple-300;
+        @apply text-xl font-bold md:text-3xl hover:text-purple-300;
         font-family: 'Poppins', sans-serif;
     }
 
+    /* Desktop Navigation Links */
     .navbar-links {
-        @apply flex space-x-12;
+        @apply hidden md:flex items-center space-x-8;
     }
 
     .navbar-link {
-        @apply flex items-center space-x-2 text-xl font-medium relative;
+        @apply flex items-center space-x-2 text-base md:text-lg font-medium relative;
     }
 
-    .navbar-icon {
-        @apply h-6 w-6;
-    }
-
-    .icon-wrapper {
-        @apply relative w-6 h-6;
-    }
-
-    .icon-outline {
-        @apply absolute inset-0 transition-opacity duration-100 opacity-100 group-hover:opacity-0;
-    }
-
-    .icon-solid {
-        @apply absolute inset-0 transition-opacity duration-100 opacity-0 group-hover:opacity-100;
-    }
-
+    /* Link Text & Hover Effects */
     .link-text {
         @apply relative;
     }
 
     .link-text::after {
-        @apply content-[''] absolute left-0 bottom-0 w-0 h-0.5 bg-purple-300 transition-all duration-100 ease-in-out;
+        @apply content-[''] absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-100 ease-in-out;
     }
 
     .navbar-link:hover .link-text::after {
         @apply w-full;
     }
 
+    /* Icons */
+    .navbar-icon {
+        @apply h-5 w-5 md:h-7 md:w-7;
+    }
+
+    .icon-wrapper {
+        @apply relative w-6 h-6 md:w-7 md:h-7;
+    }
+
+    /* Profile Section */
     .navbar-actions {
         @apply flex items-center space-x-4;
     }
 
     .profile-button {
-        @apply flex items-center justify-center w-10 h-10 rounded-full bg-white hover:bg-gray-600 transition-all duration-300;
+        @apply flex items-center justify-center;
+        @apply w-8 h-8 md:w-10 md:h-10;
+        @apply rounded-full bg-white hover:bg-gray-200 transition-all duration-300;
     }
 
     .profile-icon {
-        @apply h-6 w-6 text-black;
+        @apply h-6 w-6 md:h-7 md:w-7 text-black;
+    }
+
+    /* Mobile Menu Button */
+    .mobile-menu-button {
+        @apply flex md:hidden items-center justify-center p-2;
+        @apply text-white hover:bg-purple-700 rounded-lg transition-colors;
+    }
+
+    /* Mobile Navigation Menu */
+    .mobile-menu {
+        @apply absolute top-full left-0 w-full bg-[#35193E] shadow-lg md:hidden z-40;
+        @apply transform transition-all duration-300 ease-in-out;
+        transform: translateY(-10%);
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .mobile-menu.flex {
+        @apply flex-col items-start;
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .mobile-menu-link {
+        @apply w-full px-6 py-4 flex items-center space-x-3;
+        @apply text-white hover:bg-purple-700 transition-colors;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.15s ease-in-out, transform 0.2s ease-in-out;
+    }
+
+    /* Link Animation Delays */
+    .mobile-menu.flex .mobile-menu-link {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .mobile-menu.flex .mobile-menu-link:nth-child(1) {
+        transition-delay: 0.05s;
+    }
+
+    .mobile-menu.flex .mobile-menu-link:nth-child(2) {
+        transition-delay: 0.1s;
+    }
+
+    .mobile-menu.flex .mobile-menu-link:nth-child(3) {
+        transition-delay: 0.15s;
+    }
+
+    .mobile-menu.flex .mobile-menu-link:nth-child(4) {
+        transition-delay: 0.2s;
+    }
+
+    /* Closing Animation */
+    .mobile-menu.closing {
+        transform: translateY(-10%);
+        opacity: 0;
+        visibility: visible;
+    }
+
+    .mobile-menu.closing .mobile-menu-link {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    /* Sticky Navbar */
+    .sticky-navbar {
+        @apply fixed top-0 left-0 w-full bg-[#35193E] z-50 shadow-lg;
+    }
+
+    .sticky-placeholder {
+        @apply h-[48px] md:h-[100px];
     }
 }

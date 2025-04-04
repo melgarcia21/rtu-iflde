@@ -1,21 +1,18 @@
+import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
+import faqs from "@/data/faqs.json";
+
 const FAQ = () => {
   return (
-    <section className="faq-section">
-      <h1 className="faq-title">Frequently Asked Questions</h1>
-
-      <div className="faq-item">
-        <h3 className="faq-question">What is FlexiLearnPro?</h3>
-        <p className="faq-answer">
-          FlexiLearnPro is an educational platform that offers flexible learning paths for professionals and students.
-        </p>
-      </div>
-
-      <div className="faq-item">
-        <h3 className="faq-question">How do I enroll?</h3>
-        <p className="faq-answer">
-          You can enroll through our online registration portal. Please visit the &apos;Programs&apos; section to learn more.
-        </p>
-      </div>
+    <section className="faq-section max-w-3xl mx-auto px-4">
+      <h1 className="faq-title text-2xl font-bold mb-6">Frequently Asked Questions</h1>
+      <Accordion type="single" collapsible className="w-full">
+        {faqs.map((faq, index) => (
+          <AccordionItem key={index} value={`faq-${index}`}>
+            <AccordionTrigger className="text-left whitespace-normal">{faq.question}</AccordionTrigger>
+            <AccordionContent className="whitespace-normal">{faq.answer}</AccordionContent>
+          </AccordionItem>
+        ))}
+      </Accordion>
     </section>
   );
 };

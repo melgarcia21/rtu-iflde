@@ -1,5 +1,9 @@
 # ARTICLE I: INTRODUCTION
 
+CHED Guidelines for Micro-credential Development, Approval, and Recognition in Higher Education
+
+This document outlines the policies, standards, and guidelines established by the Commission on Higher Education (CHED) for the development, implementation, quality assurance, and recognition of micro-credentials within the Philippine higher education system.
+
 ## SECTION 1: RATIONALE
 
 The 1987 Philippine Constitution declares that the State shall protect, foster, and promote the right of all citizens to affordable quality education at all levels and take appropriate steps to ensure that education is accessible to all (Article 14, Sec 2, Par 1).
@@ -17,6 +21,10 @@ To fulfill its mandate, CHED promotes non-traditional higher education programs,
 
 In response, CHED, in collaboration with HEIs and industry partners, supports micro-credentials—flexible, industry-aligned learning modules designed to equip learners with relevant knowledge and skills.
 
+*   **Mandate:** CHED is empowered by RA 7722 (Higher Education Act of 1994) to set standards and monitor higher education programs.
+*   **Need:** Addresses the gap between higher education outputs and evolving industry demands, driven by rapid technological advancement. Promotes relevant, flexible, and accessible non-traditional higher education and lifelong learning.
+*   **Solution:** Micro-credentials, often developed with industry partners, offer a flexible, efficient, needs-based, and cost-effective way for learners to acquire relevant knowledge and skills for current and emerging jobs.
+
 ---
 
 ## SECTION 2: DEFINITION OF MICRO-CREDENTIALS
@@ -27,6 +35,10 @@ Micro-credentials are smaller units of learning that may be a single course or a
 - Integration into traditional macro-credentials (bachelor’s, master’s, doctoral degrees, or professional development courses)
 
 For this guideline, micro-credentials are defined as courses or sets of courses offered by HEIs or industry partners, developed independently or collaboratively, serving as a component of higher education programs or as stand-alone courses. They must align with industry standards and competency requirements.
+
+*   **Core Definition:** Smaller units of learning (course or set of courses) focused on specific knowledge, skills, values, and competencies in a narrow field, often delivered online with digital credentials.
+*   **Context:** Can be part of a traditional degree (Bachelor's, Master's, Doctoral) or standalone professional development, complementing macro-credentials.
+*   **Purpose (Guidelines Definition):** Offered by HEIs or industry partners (solely or jointly) as part of a recognized program or standalone, benefiting lifelong learners' academic, personal, and professional growth, aligned with standards and industry needs.
 
 ---
 
@@ -43,6 +55,13 @@ Micro-credentials may be delivered through various modalities, including:
 - Modular formats
 - Online delivery (mobile learning, flipped learning, Open and Distance e-Learning (ODeL))
 
+*   **Providers:** Covers micro-credentials designed/developed/delivered by CHED-recognized public/private HEIs, industry partners, recognized non-HEI organizations, and global providers.
+*   **Levels:** Applicable to Philippine Qualifications Framework (PQF) levels 5 to 8.
+*   **Types:**
+    *   **Stackable:** Can lead to macro-credentials (Bachelor's, Master's, Doctoral) based on CHED policies.
+    *   **Non-stackable:** Offer industry-driven, job-relevant knowledge and skills for lifelong learning.
+*   **Delivery:** Multiple modalities allowed, including residential, modular, online (mobile learning, flipped learning), Open and Distance e-learning (ODeL).
+
 ---
 
 ## SECTION 4: PURPOSE AND OBJECTIVES
@@ -56,6 +75,17 @@ These guidelines support the Philippine Qualifications Framework (PQF), which pr
 CHED’s Lifelong Learning Framework emphasizes that higher education is a continuous, voluntary, and self-motivated pursuit of learning for personal and professional development.
 
 Micro-credentials will be clearly defined within PQF Levels 5 to 8, ensuring their role in lifelong learning and professional development.
+
+*   **Purpose:** Supports the Philippine Qualifications Framework (PQF) by providing pathways and equivalencies. Aligns with the CHED Lifelong Learning Framework, promoting ongoing, voluntary learning.
+*   **PQF Articulation:**
+    *   PQF Level 5/6 MC: Fewer units than an associate degree.
+    *   PQF Level 7 MC: Fewer units than a postgraduate diploma.
+    *   PQF Level 8 MC: Fewer units than doctoral coursework.
+*   **General Objectives:**
+    1.  Define policies for designing, developing, delivering quality-assured, recognized micro-credentials.
+    2.  Specify elements, principles, and framework supporting workforce skilling, reskilling, upskilling.
+    3.  Provide process flow and standards for recognizing stackable micro-credentials (PQF 5-8).
+    4.  Ensure understanding of the CHED application process for HEIs and industry partners.
 
 ### **4.2 General Objectives**
 These guidelines aim to:
@@ -150,10 +180,27 @@ HEIs must adhere to existing laws and applicable policies, including CHED polici
 - Establish formal agreements (MOA/MOU) with industry partners, government agencies, or professional organizations.
 - Conduct and provide access to tracer studies on student outcomes.
 
+*   **Alignment:** Credit-bearing/stackable MCs must align with PQF.
+*   **Standards:** Must contribute to academic standards, rigor, and quality. CHED reviews developer credentials, SMEs, instructional designers.
+*   **Compliance:** HEIs must adhere to CHED Policies, Standards, IPR Laws, etc.
+*   **Requirements for Recognition:**
+    *   Proof of compliance with standards, PSG alignment, industry relevance, lifelong learning provision.
+    *   Pool of experts, resources, academic support system.
+    *   MOA/MOU for partnerships (industry, government, professional orgs).
+    *   Provider track record (accreditation, recognition, stakeholder feedback, tracer studies) available.
+*   **CHED Review:** CHED TP-LLL reviews/monitors quality, coordinated by OPSD.
+*   **Provider Listing:** OPSD posts list of recognized MCs/providers annually (HEIs, Non-HEIs, Industry).
+*   **TNHE:** Transnational Higher Education providers inform CHED IAS about MC offerings. Assistance may be sought from Consulates/Ministries abroad.
+*   **Non-HEI/Industry Partner Approval:** HEIs partnering with these apply to OPSD (Q1 annually) for "For-Credit MCs". CHED advises on application status/standards.
+
 ### **SECTION 11. Quality Assurance of Micro-credentials**  
 HEIs must implement both external and internal quality assurance (QA) processes to ensure the credibility of their micro-credentials.
 
 Institutions should provide information on accreditation levels, CHED recognition, and any international accreditations to enhance the credibility of their programs. QA processes should be well-documented, accessible, and responsive to stakeholder needs, incorporating an efficient feedback and evaluation system.
+
+*   **Process:** HEIs need internal and external QA processes.
+*   **Transparency:** Inform learners about HEI accreditation status (local/international), COE/COD status, international recognition.
+*   **QA Standards:** Must be fit-for-purpose, documented, accessible, responsive. Involve stakeholders via feedback/evaluation. Integrated into HEI management system with adequate resources.
 
 ### **SECTION 12. Assessment of Learning in Micro-credentials**  
 Micro-credentials should be assessed using transparent standards and well-defined learning outcomes.
@@ -161,6 +208,13 @@ Micro-credentials should be assessed using transparent standards and well-define
 - Assessment criteria and methods must be quality-assured, performance-based, and verifiable.
 - Stackable micro-credentials must include assessment tools aligned with formal qualification levels.
 - HEIs and micro-credential providers must ensure that assessment methods and grading systems are available and appropriate for the intended learning outcomes.
+
+*   **Standards:** Use transparent standards and learning outcomes.
+*   **Quality:** Assessment criteria/methods must be quality-assured, performance-based, verifiable.
+*   **Alignment:** Stackable MC assessment tools align with formal qualification levels.
+*   **Transparency:** Assessment processes, methods, grading available to learners.
+*   **Validation:** Use appropriate validation/assessment forms linked to learner outcomes.
+*   **Linkage:** Assessment information linked to agreed learning outcomes.
 
 ### **SECTION 13. Credit Transfer of Micro-credentials**  
 HEIs may recognize and credit micro-credential courses offered by industry providers and non-HEI entities offering world-class programs, provided they align with CHED policies, standards, and guidelines.
@@ -174,12 +228,118 @@ Micro-credentials may be creditable at different higher education levels:
 
 Credit transfer must follow prescribed CHED guidelines, ensuring alignment with learning outcomes, appropriate credit unit allocation, and proper assessment validation.
 
+*   **Policy:** Guided by CHED policies/standards for specific disciplines.
+*   **Recognition:** HEIs may recognize MCs from industry/Non-HEI providers (world-class) via MOA/MOU.
+*   **Considerations for Transfer:**
+    1.  Appropriateness/alignment of learning outcomes to CHED course & PQF Level.
+    2.  Number of hours (actual learning time).
+    3.  Appropriate credit units.
+    4.  Appropriateness of assessment to PQF level & learning outcomes.
+    5.  Issuance of a numerical grade.
+*   **Stackable Credits:** Existing HEI programs/courses can be converted to MCs. Industry-based MCs creditable based on outcome level/rigor. Can be leveled/stacked into:
+    *   Undergraduate/Bachelor Level
+    *   Postbaccalaureate Certificate
+    *   Graduate Diploma
+    *   Master's Level
+    *   Doctoral Level
+*   **HEI Review:** HEIs need internal teams (developers, reviewers, QA) to review MC content/outcomes. Academic/Curriculum Committees ensure relevance and verifiability. (See Annex 2 for sample process).
+
 ### **SECTION 14. Digital Credentials**  
 Micro-credentials may be awarded as digital badges, allowing learners to showcase their achievements online. These badges provide verifiable information on learning outcomes, competencies, and skills gained through coursework, experiential learning, or professional development.
 
 Digital badges may be awarded for credit or non-credit programs and can be shared on platforms such as LinkedIn, social media, and e-portfolios to enhance employability.
 
+*   **Format:** May award digital badges representing achievements (coursework, experiential learning, professional dev, workforce training).
+*   **Utility:** Shareable on online platforms (LinkedIn, social media, e-portfolios). Present verifiable outcomes, competencies, skills to employers.
+*   **Applicability:** Awarded for credit or non-credit; for undergraduates, graduates, non-traditional students, working professionals.
+
 ### **SECTION 15. Student Support Services**  
 HEIs must provide adequate instructional and administrative support systems to enhance student learning experiences and facilitate the achievement of micro-credential learning outcomes. These support services should be accessible to all students.
 
 For HEIs partnering with industry providers, a formal MOA is required to ensure collaboration and alignment with academic and professional standards.
+
+*   **Requirement:** HEI providers need necessary instructional and administrative support systems accessible to all MC students.
+*   **Partnerships:** MOA required for collaborations involving student support with industry partners.
+
+
+## ARTICLE 3: IMPLEMENTATION MECHANISMS
+
+### Section 16. Designing, Delivering and Validation
+
+*   **A. Designing:**
+    1.  Focus on flexibility, specific skills/competencies, shorter duration than degrees, employability, career advancement, skill gaps.
+    2.  Essential collaboration with industry experts, professional orgs, employers for quality, relevance, industry alignment.
+*   **B. Delivering:**
+    *   Online delivery encouraged using specific tech (platforms, LMS, digital tools) for accessibility, scalability, flexibility.
+    *   Only HEIs with CHED-recognized programs can confer certificates for stackable MCs.
+*   **C. Validation:**
+    *   HEIs may recognize MCs from recognized providers taken in the current year. (See Annex 2 for crediting process).
+    *   Registrars ensure recognition within the semester taken.
+    *   MCs offered for at least 3 years (requires yearly proof of currency/demand & updated syllabus).
+    *   MCs removed from list if no enrollees for one year.
+
+### Section 17. Micro-credentials Issued Abroad
+
+*   **Listing:** CHED OPSD lists MCs from foreign HEIs, Industries, Non-HEIs if recognized by a foreign qualifications system.
+*   **Verification:** List available on CHED Website or verifiable via CHED Regional Offices.
+
+### Section 18. Certificates on Micro-credentials
+
+*   **Issuance:** Certificates of completion provided by approved HEIs, industry providers, or CHED-approved Non-HEI providers upon successful completion.
+*   **Listing:** Only CHED-approved partners listed as recognized providers.
+
+### Section 19. Transitory Provision
+
+*   HEIs offering MCs in AY 2024-2025 must submit and register them with CHED (Stand-alone, ForCredit, or Non-credit) following Section 10 process.
+
+### Section 20. Effectivity
+
+*   Effective immediately upon Commission approval and 15 days after publication in the Official Gazette.
+
+## ANNEXES (Summary of Key Processes/Information)
+
+### Annex 1: Procedure of Approving Micro-credentials (MC)
+
+*(Describes flowcharts for different application scenarios)*
+
+*   **I.A HEIs applying for Credit MCs:** HEI submits intent -> CHED OPSD & Technical Panel (TP-LLL) review -> OPSD recommends to CHED Commission en Banc (CEB) -> CEB acts (approves/requests revision) -> OPSD returns feedback/lists approved MCs. Disapproved applications returned to HEI by OPSD.
+*   **I.B HEI and Industry Partners applying for Industry-Based MCs:** Similar process flow as I.A, involving joint submission/partnership.
+*   **I.C Non-HEIs (Local/International) applying:** Similar process flow as I.A, starting with Non-HEI submission.
+
+### Annex 2: Sample Crediting Process of HEI and Industry-based Micro-credentials
+
+*(Describes a cyclical process diagram and roles)*
+
+1.  **HEI identifies** Industry partners with relevant Micro-credentials.
+2.  **HEI Academic/Instruction/Curriculum Committee reviews** the Industry-based MCs for relevance and rigor.
+3.  **HEI signs MOU/MOA** with the Industry Partner/MC provider.
+4.  **HEI gets approval from CHED** Central Office (following Annex 1 procedure).
+5.  **Monitoring and Feedback** loop informs continuous improvement.
+
+*   **Roles:**
+    *   **HEIs:** Identify relevant, industry-driven MCs.
+    *   **CHED OPSD:** Monitors HEI offerings/crediting, provides assistance, ensures compliance (with Regional Offices).
+    *   **Industry-based MC Providers:** Ensure course relevance; ideally part of formal HEI-Industry collaboration/partnership.
+    *   **Non-HEI/Non-Industry MC Providers:** Must secure CHED approval if collaborating with an HEI for credit.
+
+### Annex 3: Sample Computation of Micro-credentials Embedded in the Curriculum
+
+*   **General Principle:** Credit for micro-credentials generally cannot exceed 30% of the total units required for a degree program, or a maximum absolute unit count.
+*   **Unit Calculation:** 1 credit unit ≈ 17-18 hours of instruction. (e.g., 3 units ≈ 51 hours; 30 units ≈ 510 hours).
+*   **Examples:**
+    *   **Bachelor's Degree (avg. 140 units):** Maximum 30 units from MCs.
+    *   **Master's Degree (min. 30 units):** Maximum 30% = 9 units from MCs.
+    *   **Doctoral Program (min. 24 coursework units):** Maximum 30% = 7 units from MCs.
+
+### Annex 4: Application Template for Micro-credentials
+
+*   Key information required includes: HEI Name, Course Name, MC Title, PQF Level, Learning Delivery Mode, Recommended Class Size, Brief Description, Developer(s) Name(s), Purpose (Use, Knowledge/Skills/Attributes gained, Pathways - education/employment), Credit Value Level, Assessment Methods, Number of Hours, Feedback and Student Services description.
+
+### Annex 6: Glossary of Terms (Selected Key Definitions)
+
+*   **Stackable micro-credentials:** Designed to meet degree/formal qualification requirements; include equivalent credit units, PQF alignment, course equivalents.
+*   **Non-credit (non-stackable, stand-alone):** Short courses for lifelong learning needs (personal, professional, technical, academic development) not part of a formal qualification/degree.
+*   **Philippine Qualifications Framework (PQF):** National policy describing educational qualification levels and standards based on knowledge, skills, values, application, independence.
+*   **Credit Transfer:** Mechanism for determining equivalencies and awarding credit between qualifications based on matched learning outcomes.
+*   **Lifelong Learners:** Individuals continually learning new skills/competencies throughout life.
+*   **Quality Assurance System:** Process ensuring MC quality using acceptable, transparent standards (internal, external, or both).

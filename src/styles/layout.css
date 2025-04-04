@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
 @layer layout {
-
     /* Base Layout Styles
   ----------------------------------------*/
     html,
@@ -10,7 +9,7 @@
     }
 
     #__next {
-        @apply flex flex-col min-h-screen;
+        @apply min-h-screen flex flex-col;
     }
 
     main {
@@ -20,7 +19,7 @@
     /* Header Styles
   ----------------------------------------*/
     .header-section {
-        @apply relative bg-cover bg-center text-white font-sans overflow-hidden;
+        @apply relative overflow-hidden bg-cover bg-center text-white font-sans;
         background-image: url('/images/header/rtu-iflde-cover.png');
     }
 
@@ -38,7 +37,7 @@
     }
 
     .header-separator {
-        @apply w-px h-10 md:h-12 bg-white mr-3 md:mr-4;
+        @apply h-10 w-px md:h-12 mr-3 md:mr-4 bg-white;
     }
 
     /* Header Text Content */
@@ -47,7 +46,7 @@
     }
 
     .header-university-name {
-        @apply font-bold text-sm md:text-base lg:text-lg leading-tight;
+        @apply text-sm md:text-base lg:text-lg font-bold leading-tight;
     }
 
     .header-university-location {
@@ -67,7 +66,7 @@
     }
 
     .header-horizontal-line {
-        @apply w-full md:w-3/4 h-px bg-white my-2 md:my-3;
+        @apply w-full md:w-3/4 h-px my-2 md:my-3 bg-white;
     }
 
     .header-subtitle {
@@ -78,20 +77,16 @@
 ----------------------------------------*/
     /* Main Navbar */
     .navbar {
-        @apply bg-[#35193E] text-white transition-all duration-300 relative py-1 md:py-4 z-50;
+        @apply relative z-50 py-1 md:py-4 bg-[#35193E] text-white transition-all duration-300;
     }
 
     .navbar-container {
-        @apply max-w-7xl mx-auto px-4 flex items-center justify-between;
-        /* Mobile height */
-        @apply h-12;
-        /* Desktop height */
-        @apply md:h-14;
+        @apply h-12 md:h-14 max-w-7xl mx-auto px-4 flex items-center justify-between;
     }
 
     /* Navbar Brand */
     .navbar-brand {
-        @apply text-xl font-bold md:text-3xl hover:text-purple-300;
+        @apply text-xl md:text-3xl font-bold hover:text-purple-300;
         font-family: 'Poppins', sans-serif;
     }
 
@@ -101,7 +96,7 @@
     }
 
     .navbar-link {
-        @apply flex items-center space-x-2 text-base md:text-lg font-medium relative;
+        @apply flex items-center space-x-2 relative text-base md:text-lg font-medium;
     }
 
     /* Link Text & Hover Effects */
@@ -132,9 +127,7 @@
     }
 
     .profile-button {
-        @apply flex items-center justify-center;
-        @apply w-8 h-8 md:w-10 md:h-10;
-        @apply rounded-full bg-white hover:bg-gray-200 transition-all duration-300;
+        @apply w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-full bg-white hover:bg-gray-200 transition-all duration-300;
     }
 
     .profile-icon {
@@ -143,14 +136,12 @@
 
     /* Mobile Menu Button */
     .mobile-menu-button {
-        @apply flex md:hidden items-center justify-center p-2;
-        @apply text-white hover:bg-purple-700 rounded-lg transition-colors;
+        @apply flex md:hidden items-center justify-center p-2 text-white hover:bg-purple-700 rounded-lg transition-colors;
     }
 
     /* Mobile Navigation Menu */
     .mobile-menu {
-        @apply absolute top-full left-0 w-full bg-[#35193E] shadow-lg md:hidden z-40;
-        @apply transform transition-all duration-300 ease-in-out;
+        @apply absolute top-full left-0 w-full z-40 bg-[#35193E] shadow-lg md:hidden transform transition-all duration-300 ease-in-out;
         transform: translateY(-10%);
         opacity: 0;
         visibility: hidden;
@@ -164,8 +155,7 @@
     }
 
     .mobile-menu-link {
-        @apply w-full px-6 py-4 flex items-center space-x-3;
-        @apply text-white hover:bg-purple-700 transition-colors;
+        @apply w-full px-6 py-4 flex items-center space-x-3 text-white hover:bg-purple-700 transition-colors;
         opacity: 0;
         transform: translateY(-10px);
         transition: opacity 0.15s ease-in-out, transform 0.2s ease-in-out;
@@ -207,7 +197,7 @@
 
     /* Sticky Navbar */
     .sticky-navbar {
-        @apply fixed top-0 left-0 w-full bg-[#35193E] z-50 shadow-lg;
+        @apply fixed top-0 left-0 w-full z-50 bg-[#35193E] shadow-lg;
     }
 
     .sticky-placeholder {

@@ -1,4 +1,6 @@
-import ContactForm from '../../components/forms/ContactForm';
+import ContactDetails from "./sections/ContactDetails";
+import ContactForm from "./sections/ContactForm";
+import MapEmbed from "./sections/MapEmbed";
 
 const Contact = () => {
   return (
@@ -8,8 +10,11 @@ const Contact = () => {
         Have questions or need assistance? Fill out the form below or reach out to us directly.
       </p>
 
-      {/* Contact Form */}
+      <ContactDetails />
       <ContactForm />
+      <MapEmbed />
+
+
     </section>
   );
 };

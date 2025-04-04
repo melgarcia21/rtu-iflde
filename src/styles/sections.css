@@ -4,83 +4,124 @@
 
   /** Hero **/
   .hero-section {
-    @apply bg-blue-800 text-white py-16;
+    @apply relative min-h-[600px] bg-gradient-to-r from-blue-900 to-blue-700 text-white flex items-center justify-center;
   }
 
   .hero-container {
-    @apply max-w-7xl mx-auto px-6 text-center;
+    @apply container mx-auto px-4 text-center;
   }
 
   .hero-title {
-    @apply text-4xl font-bold;
+    @apply text-4xl md:text-6xl font-bold mb-4;
   }
 
   .hero-subtitle {
-    @apply mt-4 text-lg;
+    @apply text-xl md:text-2xl mb-8 text-blue-100;
   }
 
-  /** Testimonials **/
-  .testimonial-section {
-    @apply bg-gray-100 py-16;
+  /** Introduction **/
+  .intro-section {
+    @apply py-16 bg-white;
   }
 
-  .testimonial-container {
-    @apply max-w-7xl mx-auto px-6 text-center;
+  .intro-container {
+    @apply container mx-auto px-4;
   }
 
-  .testimonial-title {
-    @apply text-3xl font-semibold;
+  .intro-content {
+    @apply max-w-4xl mx-auto text-center;
   }
 
-  .testimonial-grid {
-    @apply mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6;
+  .intro-title {
+    @apply text-3xl font-bold mb-6 text-gray-900;
   }
 
-  .testimonial-card {
-    @apply bg-white p-6 rounded-lg shadow-md;
+  .intro-description {
+    @apply text-lg text-gray-600 leading-relaxed;
   }
 
-  .testimonial-text {
-    @apply text-lg italic;
+  /** How It Works **/
+  .how-it-works-section {
+    @apply py-16 bg-gray-50;
   }
 
-  .testimonial-author {
-    @apply mt-4 text-gray-600;
+  .how-it-works-container {
+    @apply container mx-auto px-4;
   }
 
-  /** Programs **/
-  .programs-section {
-    @apply py-16 px-6 max-w-7xl mx-auto;
+  .how-it-works-title {
+    @apply text-3xl font-bold text-center mb-12 text-gray-900;
   }
 
-  .programs-title {
-    @apply text-3xl font-bold text-center;
+  .steps-container {
+    @apply grid grid-cols-1 md:grid-cols-4 gap-8;
   }
 
-  .programs-grid {
-    @apply mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6;
+  .step-item {
+    @apply flex flex-col items-center text-center;
   }
 
-  /** Program Page **/
-  .program-section {
-    @apply py-16 px-6 max-w-7xl mx-auto;
+  .step-number {
+    @apply w-12 h-12 rounded-full bg-blue-800 text-white flex items-center justify-center text-xl font-bold mb-4;
   }
 
-  .program-title {
-    @apply text-4xl font-bold text-center;
+  .step-title {
+    @apply text-xl font-semibold mb-2 text-gray-900;
   }
 
-  .program-content {
-    @apply mt-8 text-lg text-gray-700;
+  .step-description {
+    @apply text-gray-600;
+  }
+
+  /** Featured Program **/
+  .featured-program-section {
+    @apply py-16 bg-white;
+  }
+
+  .featured-program-container {
+    @apply container mx-auto px-4;
+  }
+
+  .featured-program-content {
+    @apply max-w-4xl mx-auto;
+  }
+
+  .featured-program-title {
+    @apply text-3xl font-bold mb-6 text-gray-900;
+  }
+
+  .featured-program-description {
+    @apply text-lg text-gray-600 mb-8;
+  }
+
+  /** News Snippet **/
+  .news-snippet-section {
+    @apply py-16 bg-gray-50;
+  }
+
+  .news-snippet-container {
+    @apply container mx-auto px-4;
+  }
+
+  .news-snippet-header {
+    @apply flex justify-between items-center mb-8;
+  }
+
+  .news-snippet-title {
+    @apply text-3xl font-bold text-gray-900;
+  }
+
+  .news-grid {
+    @apply grid grid-cols-1 md:grid-cols-3 gap-8;
   }
 
   /** FAQ **/
   .faq-section {
-    @apply py-16 px-6 max-w-7xl mx-auto;
+    @apply py-16 bg-white;
   }
 
   .faq-title {
-    @apply text-3xl font-bold text-center;
+    @apply text-3xl font-bold text-center mb-12 text-gray-900;
   }
 
   .faq-item {

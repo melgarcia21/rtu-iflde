@@ -11,7 +11,7 @@ The project is structured as follows:
 - `src`: Source directory containing the main application code.
     - `components`: Directory containing reusable React components.
     - `config`: Directory containing configuration files such as `siteMetadata.ts`.
-    - `data`: Directory containing JSON files for dynamic content such as programs, FAQs, and testimonials.
+    - `data`: Directory containing JSON files for dynamic content such as programs and FAQs
     - `pages`: Directory containing the different pages of the application.
     - `styles`: Directory containing global and component-specific styles.
 
@@ -40,7 +40,6 @@ This directory contains JSON files for dynamic content used throughout the appli
 - `about.json`: Contains information about the platform.
 - `faqs.json`: Contains frequently asked questions and answers.
 - `programs.json`: Contains details about the available learning programs.
-- `testimonials.json`: Contains user testimonials about the platform.
 
 ### pages
 
@@ -94,7 +93,6 @@ The application uses JSON files in the `data` directory to manage dynamic conten
 
 - **Programs**: Listed on the programs page, sourced from `programs.json`.
 - **FAQs**: Displayed on the FAQ section of the home page, sourced from `faqs.json`.
-- **Testimonials**: User testimonials displayed on relevant pages, sourced from `testimonials.json`.
 
 # Conclusion
 

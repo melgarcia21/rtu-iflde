@@ -1,14 +1,14 @@
 interface ButtonProps {
   label: string;
-  onClick: () => void;
-  type?: 'primary' | 'secondary';
+  onClick?: () => void;  // Make onClick optional
+  className?: string;
 }
 
-const Button = ({ label, onClick, type = 'primary' }: ButtonProps) => {
+const Button = ({ label, onClick, className = '' }: ButtonProps) => {
   return (
     <button
       onClick={onClick}
-      className={`button ${type === 'primary' ? 'button-primary' : 'button-secondary'}`}
+      className={`button button-primary ${className}`}
     >
       {label}
     </button>

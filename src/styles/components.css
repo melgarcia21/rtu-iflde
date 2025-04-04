@@ -39,4 +39,63 @@
         @apply text-blue-800 hover:underline;
     }
 
+/* Stats Grid Styles */
+.stats-grid {
+    @apply grid grid-cols-1 md:grid-cols-3 gap-8 my-12;
+  }
+  
+  .stat-card {
+    @apply bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 
+           transform hover:-translate-y-2;
+    animation: fadeInUp 0.6s ease-out;
+  }
+  
+  .stat-value {
+    @apply text-4xl font-bold text-blue-600 mb-2;
+    background: linear-gradient(45deg, #2563eb, #1d4ed8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .stat-label {
+    @apply text-xl font-semibold text-gray-800 mb-2;
+  }
+  
+  .stat-description {
+    @apply text-gray-600;
+  }
+  
+  /* Process Diagram Styles */
+  .process-diagram {
+    @apply my-12 px-4;
+  }
+  
+  .process-steps {
+    @apply grid grid-cols-1 md:grid-cols-4 gap-6;
+  }
+  
+  .process-step {
+    @apply relative flex flex-col items-center text-center;
+  }
+  
+  .process-icon {
+    @apply w-16 h-16 flex items-center justify-center text-2xl
+           bg-blue-100 rounded-full mb-4 shadow-md;
+    animation: bounce 2s infinite;
+  }
+  
+  .process-step-title {
+    @apply text-lg font-semibold text-gray-800 mb-2;
+  }
+  
+  .process-step-description {
+    @apply text-sm text-gray-600;
+  }
+  
+  /* Add connecting lines between steps */
+  .process-step:not(:last-child):after {
+    @apply hidden md:block absolute top-8 -right-3 w-6 h-0.5 bg-blue-200;
+    content: "";
+  }
+
 }

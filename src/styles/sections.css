@@ -153,16 +153,215 @@
     @apply mt-8 text-lg text-gray-600;
   }
 
-  /** Contact **/
-  .contact-section {
-    @apply py-16 px-6 max-w-7xl mx-auto;
+  /* About Page Sections - Enhanced with Animations */
+  .about-section-container {
+    @apply max-w-7xl mx-auto px-4 py-16;
+    animation: fadeIn 0.8s ease-out;
   }
 
-  .contact-title {
-    @apply text-3xl font-bold text-center;
+  .about-section-title {
+    @apply text-3xl md:text-4xl font-bold mb-8 text-center text-gray-900;
+    animation: slideDown 0.6s ease-out;
   }
 
-  .contact-description {
-    @apply mt-4 text-lg text-center text-gray-700;
+  .about-section-subtitle {
+    @apply text-xl font-semibold mb-4 text-gray-800;
+    animation: slideRight 0.6s ease-out;
+  }
+
+  .about-section-text {
+    @apply text-lg text-gray-600 leading-relaxed mb-6;
+    animation: fadeIn 0.8s ease-out;
+  }
+
+  .about-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10;
+    perspective: 1000px;
+  }
+
+  .about-card {
+    @apply bg-white p-8 rounded-xl shadow-lg transition-all duration-500;
+    transform-style: preserve-3d;
+    animation: cardFloat 3s ease-in-out infinite;
+  }
+
+  .about-card:hover {
+    @apply shadow-2xl;
+    transform: translateY(-10px) rotateX(5deg);
+  }
+
+  .about-list {
+    @apply space-y-4 mt-6 list-disc pl-6;
+  }
+
+  .about-list-item {
+    @apply text-gray-600 hover:text-blue-600 transition-colors duration-300;
+    animation: slideRight 0.6s ease-out;
+  }
+
+  .about-highlight {
+    @apply bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl border border-blue-100 my-8 transform hover:scale-[1.02] transition-all duration-300;
+    animation: scaleIn 0.8s ease-out;
+  }
+
+  .about-cta {
+    @apply mt-12 flex justify-center;
+    animation: bounceIn 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  /* Partner logos section - Enhanced */
+  .partner-grid {
+    @apply grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 items-center justify-items-center mt-10;
+  }
+
+  .partner-logo {
+    @apply w-32 h-32 object-contain filter grayscale hover:grayscale-0 transition-all duration-500 transform hover:scale-110;
+    animation: fadeInUp 0.8s ease-out;
+  }
+
+  /* PQF Table Styles */
+  .pqf-table-container {
+    @apply my-8 overflow-x-auto;
+  }
+
+  .pqf-table {
+    @apply w-full border-collapse bg-white rounded-lg shadow-lg overflow-hidden;
+  }
+
+  .pqf-table th {
+    @apply bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-4 text-left font-semibold;
+  }
+
+  .pqf-table td {
+    @apply px-6 py-4 border-b border-gray-200 transition-colors duration-200;
+  }
+
+  .pqf-table tbody tr:hover {
+    @apply bg-blue-50;
+  }
+
+  /* Timeline section - Enhanced */
+  .timeline {
+    @apply relative pl-8 before:absolute before:left-0 before:top-0 before:bottom-0 before:w-0.5 before:bg-blue-200;
+  }
+
+  .timeline-item {
+    @apply relative mb-12 opacity-0;
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+
+  .timeline-dot {
+    @apply absolute -left-[9px] w-4 h-4 rounded-full bg-blue-600 ring-4 ring-blue-100;
+    animation: pulse 2s infinite;
+  }
+
+  .timeline-date {
+    @apply text-sm font-semibold text-blue-600 mb-2;
+  }
+
+  .timeline-content {
+    @apply text-gray-600 hover:text-gray-900 transition-colors duration-200;
+  }
+
+  /* Animation Keyframes */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideRight {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes bounceIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.3);
+    }
+    50% {
+      opacity: 0.9;
+      transform: scale(1.1);
+    }
+    80% {
+      opacity: 1;
+      transform: scale(0.89);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes cardFloat {
+    0%, 100% {
+      transform: translateY(0) rotateX(0);
+    }
+    50% {
+      transform: translateY(-10px) rotateX(5deg);
+    }
+  }
+
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.4);
+    }
+    70% {
+      box-shadow: 0 0 0 10px rgba(37, 99, 235, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(37, 99, 235, 0);
+    }
+  }
+
+  /* Intersection Observer Animations */
+  .fade-in-view {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .fade-in-view.is-visible {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

@@ -2,34 +2,34 @@ import React from 'react';
 
 const PQFTable = () => {
   return (
-    <div className="pqf-table-container fade-in-view">
-      <table className="pqf-table">
+    <div className="overflow-x-auto my-8 rounded-lg shadow-lg">
+      <table className="min-w-full bg-white border-collapse">
         <thead>
-          <tr>
-            <th>PQF Level</th>
-            <th>Academic Qualifications</th>
-            <th>Micro-Credentials</th>
+          <tr className="bg-gradient-to-r from-blue-600 to-blue-700">
+            <th className="px-6 py-4 text-left text-white font-semibold border-b">PQF Level</th>
+            <th className="px-6 py-4 text-left text-white font-semibold border-b">Academic Qualifications</th>
+            <th className="px-6 py-4 text-left text-white font-semibold border-b">Micro-Credentials</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>Level 8</td>
-            <td>Doctoral</td>
-            <td>Fewer units than doctoral coursework</td>
+        <tbody className="divide-y divide-gray-200">
+          <tr className="hover:bg-blue-50 transition duration-200">
+            <td className="px-6 py-4 whitespace-nowrap">Level 8</td>
+            <td className="px-6 py-4 whitespace-nowrap">Doctoral</td>
+            <td className="px-6 py-4">Fewer units than doctoral coursework</td>
           </tr>
-          <tr>
-            <td>Level 7</td>
-            <td>Master&apos;s</td>
-            <td>Fewer units than postgraduate diploma</td>
+          <tr className="hover:bg-blue-50 transition duration-200">
+            <td className="px-6 py-4 whitespace-nowrap">Level 7</td>
+            <td className="px-6 py-4 whitespace-nowrap">Master&apos;s</td>
+            <td className="px-6 py-4">Fewer units than postgraduate diploma</td>
           </tr>
-          <tr>
-            <td>Level 6</td>
-            <td>Bachelor&apos;s</td>
-            <td rowSpan={2}>Fewer units than associate degree</td>
+          <tr className="hover:bg-blue-50 transition duration-200">
+            <td className="px-6 py-4 whitespace-nowrap">Level 6</td>
+            <td className="px-6 py-4 whitespace-nowrap">Bachelor&apos;s</td>
+            <td className="px-6 py-4" rowSpan={2}>Fewer units than associate degree</td>
           </tr>
-          <tr>
-            <td>Level 5</td>
-            <td>Associate Degree</td>
+          <tr className="hover:bg-blue-50 transition duration-200">
+            <td className="px-6 py-4 whitespace-nowrap">Level 5</td>
+            <td className="px-6 py-4 whitespace-nowrap">Associate Degree</td>
           </tr>
         </tbody>
       </table>

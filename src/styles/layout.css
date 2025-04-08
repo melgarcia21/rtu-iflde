@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 @layer layout {
+
     /* Base Layout Styles
   ----------------------------------------*/
     html,
@@ -203,4 +204,69 @@
     .sticky-placeholder {
         @apply h-[48px] md:h-[100px];
     }
+
+    /* Footer */
+
+    .footer {
+        @apply bg-gray-900 text-gray-400;
+    }
+
+    .footer-container {
+        @apply max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8 text-center;
+    }
+
+    .footer-intro-label {
+        @apply text-indigo-400 text-sm font-medium mb-2;
+    }
+
+    .footer-heading {
+        @apply text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-4;
+    }
+
+    .footer-description {
+        @apply max-w-xl mx-auto text-base sm:text-lg md:text-lg mb-6;
+    }
+
+    .footer-cta-button {
+        @apply inline-block px-6 py-2 bg-indigo-500 text-white rounded-md hover:bg-indigo-400 transition;
+    }
+
+    .footer-divider {
+        @apply border-t border-gray-700;
+    }
+
+    .footer-logos {
+        @apply flex gap-2;
+    }
+
+
+    .footer-grid {
+        @apply max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-5 gap-8 text-sm;
+    }
+
+    .footer-column-title {
+        @apply text-white font-semibold mb-4;
+    }
+
+    .footer-link {
+        @apply hover:text-gray-200 transition;
+    }
+
+    .footer-bottom {
+        @apply max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm;
+    }
+
+    .footer-copyright {
+        @apply text-gray-500;
+    }
+
+    .footer-social-icons {
+        @apply flex gap-4 text-gray-400;
+    }
+
+    .footer-social-icon {
+        @apply hover:text-white text-lg;
+    }
+
+
 }

@@ -16,13 +16,13 @@ const ProgramPage = ({ program }: ProgramProps) => {
   const router = useRouter();
 
   if (router.isFallback) {
-    return <div>Loading...</div>;
+    return <div className="loading-message">Loading...</div>;
   }
 
   return (
-    <section className="program-section">
-      <h1 className="program-title">{program.title}</h1>
-      <p className="program-content">{program.content}</p>
+    <section className="program-details">
+      <h1 className="program-details-title">{program.title}</h1>
+      <p className="program-details-content">{program.content}</p>
     </section>
   );
 };

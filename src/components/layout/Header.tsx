@@ -14,8 +14,8 @@ const Header = () => {
             src="/images/header/rtu-logo.png"
             alt="RTU Logo"
             className="header-logo"
-            width={50}
-            height={50}
+            width={100}
+            height={100}
           />
           {/* Vertical Separator Line */}
           <div className="header-separator"></div>

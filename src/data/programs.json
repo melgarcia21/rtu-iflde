@@ -1,52 +1,18 @@
 [
   {
-    "title": "Professional Development",
+    "title": "Workflow Automation & Agentic AI Basics",
     "content": "Courses for career growth.",
+    "tags": ["Top Choice", "AI"],
+    "duration": "1 Month",
+    "image": "/images/programs-image/sample-image.jpeg",
     "link": "/programs/1"
   },
   {
-    "title": "Remote Learning Certification",
-    "content": "Courses for distance learners.",
-    "link": "/programs/2"
-  },
-  {
-    "title": "Remote Learning Certification",
-    "content": "Courses for distance learners.",
-    "link": "/programs/2"
-  },
-  {
-    "title": "Remote Learning Certification",
-    "content": "Courses for distance learners.",
-    "link": "/programs/2"
-  },
-  {
-    "title": "Remote Learning Certification",
-    "content": "Courses for distance learners.",
-    "link": "/programs/2"
-  },
-  {
-    "title": "Remote Learning Certification",
-    "content": "Courses for distance learners.",
-    "link": "/programs/2"
-  },
-  {
-    "title": "Remote Learning Certification",
-    "content": "Courses for distance learners.",
-    "link": "/programs/2"
-  },
-  {
-    "title": "Remote Learning Certification",
-    "content": "Courses for distance learners.",
-    "link": "/programs/2"
-  },
-  {
-    "title": "Remote Learning Certification",
-    "content": "Courses for distance learners.",
-    "link": "/programs/2"
-  },
-  {
-    "title": "Remote Learning Certification",
-    "content": "Courses for distance learners.",
+    "title": "Visual Graphic Design",
+    "content": "Basics in Photoshop, Illustrator and InDesign.",
+    "tags": ["Beginner", "Graphic Design"],
+    "duration": "2 Months",
+    "image": "/images/programs-image/graphic-designing.jpg",
     "link": "/programs/2"
   }
 ]

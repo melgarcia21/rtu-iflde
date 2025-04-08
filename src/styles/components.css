@@ -3,99 +3,161 @@
 
 @layer components {
 
-    .button {
-        @apply px-6 py-2 rounded-lg text-white;
-    }
+  .button {
+    @apply px-6 py-2 rounded-lg text-white;
+  }
 
-    .button-primary {
-        @apply bg-blue-800 hover:bg-blue-600;
-    }
+  .button-primary {
+    @apply bg-blue-800 hover:bg-blue-600;
+  }
 
-    .button-secondary {
-        @apply bg-gray-800 hover:bg-gray-600;
-    }
+  .button-secondary {
+    @apply bg-gray-800 hover:bg-gray-600;
+  }
 
-    .card {
-        @apply bg-white shadow-md rounded-lg overflow-hidden;
-    }
+  .card {
+    @apply bg-white shadow-md rounded-2xl overflow-hidden;
+  }
 
-    .card-content {
-        @apply p-6;
-    }
+  .card-content {
+    @apply p-6;
+  }
 
-    .card-title {
-        @apply text-xl font-semibold;
-    }
+  .card-title {
+    @apply text-xl font-semibold;
+  }
 
-    .card-text {
-        @apply mt-2 text-gray-600;
-    }
+  .card-text {
+    @apply mt-2 text-gray-600;
+  }
 
-    .card-footer {
-        @apply px-6 pb-6;
-    }
+  .card-footer {
+    @apply px-6 pb-6;
+  }
 
-    .card-link {
-        @apply text-blue-800 hover:underline;
-    }
+  .card-link {
+    @apply text-blue-800 hover:underline;
+  }
 
-/* Stats Grid Styles */
-.stats-grid {
+  /* Stats Grid Styles */
+  .stats-grid {
     @apply grid grid-cols-1 md:grid-cols-3 gap-8 my-12;
   }
-  
+
   .stat-card {
-    @apply bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 
-           transform hover:-translate-y-2;
+    @apply bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2;
     animation: fadeInUp 0.6s ease-out;
   }
-  
+
   .stat-value {
     @apply text-4xl font-bold text-blue-600 mb-2;
     background: linear-gradient(45deg, #2563eb, #1d4ed8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  
+
   .stat-label {
     @apply text-xl font-semibold text-gray-800 mb-2;
   }
-  
+
   .stat-description {
     @apply text-gray-600;
   }
-  
+
   /* Process Diagram Styles */
   .process-diagram {
     @apply my-12 px-4;
   }
-  
+
   .process-steps {
     @apply grid grid-cols-1 md:grid-cols-4 gap-6;
   }
-  
+
   .process-step {
     @apply relative flex flex-col items-center text-center;
   }
-  
+
   .process-icon {
-    @apply w-16 h-16 flex items-center justify-center text-2xl
-           bg-blue-100 rounded-full mb-4 shadow-md;
+    @apply w-16 h-16 flex items-center justify-center text-2xl bg-blue-100 rounded-full mb-4 shadow-md;
     animation: bounce 2s infinite;
   }
-  
+
   .process-step-title {
     @apply text-lg font-semibold text-gray-800 mb-2;
   }
-  
+
   .process-step-description {
     @apply text-sm text-gray-600;
   }
-  
+
   /* Add connecting lines between steps */
   .process-step:not(:last-child):after {
     @apply hidden md:block absolute top-8 -right-3 w-6 h-0.5 bg-blue-200;
     content: "";
+  }
+
+
+
+  /* Course Card*/
+
+  .course-card-wrapper {
+    @apply relative w-full max-w-sm h-[600px] rounded-[32px] overflow-hidden shadow-xl mx-auto;
+  }
+  
+  .course-card-image-container {
+    @apply absolute inset-0 w-full h-full;
+  }
+  
+  .course-card-img {
+    @apply object-cover;
+  }
+  
+  .course-card-gradient-blur {
+    @apply absolute inset-x-0 bottom-0 h-[80%] bg-gradient-to-t from-black/30 via-black/10 to-transparent backdrop-blur-[1px];
+  }
+  
+  .course-card-overlay {
+    @apply absolute inset-x-0 bottom-0 h-[60%] bg-gradient-to-t from-black/70 via-black/40 to-transparent backdrop-blur-[2px];
+  }
+  
+  .course-card-content {
+    @apply p-6 h-full flex flex-col;
+  }
+  
+  .course-card-header {
+    @apply flex justify-between items-start mb-2;
+  }
+  
+  .course-card-title-container {
+    @apply flex flex-col gap-2;
+  }
+  
+  .course-card-title {
+    @apply text-white text-2xl font-bold;
+  }
+  
+  .course-card-duration-badge {
+    @apply bg-violet-900 text-white px-3 py-1 rounded-full text-xs font-medium;
+  }
+  
+  .course-card-description {
+    @apply text-white/80 mb-6 text-lg;
+  }
+  
+  .course-card-tags {
+    @apply flex flex-wrap gap-2 mb-6 mt-auto;
+  }
+  
+  .course-card-tag {
+    @apply bg-violet-900 text-white border-0 px-4 py-1.5 rounded-full text-sm;
+  }
+  
+  .course-card-cta {
+    @apply mt-4;
+  }
+  
+  .course-card-button {
+    @apply w-full py-6 text-xl rounded-full bg-violet-950 text-white hover:bg-violet-800;
   }
 
 }

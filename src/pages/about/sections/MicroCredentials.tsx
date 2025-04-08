@@ -1,57 +1,51 @@
 import React from 'react';
 import PQFTable from '@/components/ui/PQFTable';
-import Link from 'next/link';
+import StatsGrid from '@/components/ui/StatsGrid';
 
 const MicroCredentials = () => {
   return (
-    <section className="about-section-container">
-      <h2 className="about-section-title">Micro-Credentials</h2>
+    <section className="py-20 bg-gradient-to-br from-white via-blue-50 to-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-4xl font-bold text-center mb-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-800">
+          Understanding Micro-credentials
+        </h2>
+        
+        <div className="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+          <p>Micro-credentials are smaller units of learning that provide focused knowledge, 
+             skills, and competencies in specific fields. They offer flexible pathways 
+             to formal qualifications while maintaining high academic standards.</p>
+        </div>
 
-      <div className="about-highlight">
-        <h3 className="about-section-subtitle">What are Micro-Credentials?</h3>
-        <p className="about-section-text">
-          Micro-credentials are mini-qualifications that demonstrate skills, knowledge, and experience 
-          in a specific field or capability. They offer a more flexible, targeted approach to education 
-          and professional development.
-        </p>
+        <StatsGrid />
+
+        <div className="bg-white rounded-2xl shadow-xl p-8 my-12">
+          <h3 className="text-2xl font-semibold text-blue-800 mb-6">Philippine Qualifications Framework Levels</h3>
+          <PQFTable />
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+          <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+            <div className="text-3xl mb-4">🎓</div>
+            <h4 className="text-xl font-semibold text-blue-800 mb-3">Stackable Credits</h4>
+            <p className="text-gray-600">Earn credits that can contribute towards formal degree programs, 
+              providing flexible pathways to higher education.</p>
+          </div>
+
+          <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+            <div className="text-3xl mb-4">⚡</div>
+            <h4 className="text-xl font-semibold text-blue-800 mb-3">Flexible Learning</h4>
+            <p className="text-gray-600">Choose from various delivery modes including online, 
+              blended, and face-to-face options to suit your schedule.</p>
+          </div>
+
+          <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+            <div className="text-3xl mb-4">🎯</div>
+            <h4 className="text-xl font-semibold text-blue-800 mb-3">Industry-Aligned</h4>
+            <p className="text-gray-600">Programs designed in collaboration with industry partners 
+              to ensure relevant and practical skill development.</p>
+          </div>
+        </div>
       </div>
-
-      <div className="grid md:grid-cols-3 gap-8 mt-12">
-        <div className="about-card transform hover:scale-105">
-          <h4 className="text-xl font-semibold text-blue-600 mb-4">Flexible Learning</h4>
-          <p className="text-gray-600 mb-4">Study at your own pace and choose credentials that match your career goals.</p>
-          <div className="h-1 w-20 bg-blue-600 rounded-full"></div>
-        </div>
-
-        <div className="about-card transform hover:scale-105">
-          <h4 className="text-xl font-semibold text-blue-600 mb-4">Industry Recognition</h4>
-          <p className="text-gray-600 mb-4">Earn credentials that are valued and recognized by employers.</p>
-          <div className="h-1 w-20 bg-blue-600 rounded-full"></div>
-        </div>
-
-        <div className="about-card transform hover:scale-105">
-          <h4 className="text-xl font-semibold text-blue-600 mb-4">Stackable Credits</h4>
-          <p className="text-gray-600 mb-4">Build towards a full qualification by combining multiple micro-credentials.</p>
-          <div className="h-1 w-20 bg-blue-600 rounded-full"></div>
-        </div>
-      </div>
-
-      <div className="my-16">
-        <h3 className="about-section-subtitle text-center mb-8">Philippine Qualifications Framework Levels</h3>
-        <PQFTable />
-      </div>
-
-      <div className="about-highlight mt-12">
-        <h3 className="text-xl font-semibold text-gray-800 mb-4">Getting Started</h3>
-        <p className="text-gray-600 mb-6">
-          Ready to begin your micro-credentials journey? Browse our available programs and choose 
-          the credentials that align with your professional goals. Each credential is designed to 
-          provide specific, measurable skills that employers value.
-        </p>
-          <Link href="/programs" passHref legacyBehavior>
-            <a className="button button-primary">Explore Programs</a>
-          </Link>
-        </div>
     </section>
   );
 };

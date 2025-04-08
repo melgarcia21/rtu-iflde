@@ -160,8 +160,8 @@
   }
 
   .about-section-title {
-    @apply text-3xl md:text-4xl font-bold mb-8 text-center text-gray-900;
-    animation: slideDown 0.6s ease-out;
+    @apply text-4xl font-bold mb-8 text-center;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-800;
   }
 
   .about-section-subtitle {
@@ -209,58 +209,142 @@
     animation: bounceIn 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
+  /* Process Diagram */
+  .process-diagram {
+    @apply relative py-12;
+  }
+
+  .process-step {
+    @apply relative bg-white p-6 rounded-xl shadow-lg;
+    @apply transform transition-all duration-300 hover:shadow-xl hover:-translate-y-2;
+  }
+
+  .process-icon {
+    @apply w-16 h-16 mx-auto mb-4 rounded-full;
+    @apply bg-gradient-to-br from-blue-50 to-white;
+    @apply flex items-center justify-center text-3xl shadow-inner;
+  }
+
   /* Partner logos section - Enhanced */
   .partner-grid {
-    @apply grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 items-center justify-items-center mt-10;
+    @apply grid grid-cols-1 md:grid-cols-3 gap-12 items-center justify-items-center max-w-7xl mx-auto;
   }
 
   .partner-logo {
-    @apply w-32 h-32 object-contain filter grayscale hover:grayscale-0 transition-all duration-500 transform hover:scale-110;
+    @apply relative w-64 h-64 transition-transform duration-500;
     animation: fadeInUp 0.8s ease-out;
+  }
+
+  .partner-logo img {
+    @apply object-contain filter transition-all duration-300;
+  }
+
+  .partner-logo:hover img {
+    @apply brightness-110 scale-110;
+  }
+
+  /* Partnership Benefits */
+  .benefit-card {
+    @apply bg-white rounded-xl shadow-lg p-4;
+    @apply transform transition-all duration-300;
+    @apply hover:shadow-xl hover:-translate-y-1;
+  }
+
+  .benefit-image-container {
+    @apply relative w-full aspect-square mb-4 rounded-lg overflow-hidden;
+  }
+
+  .benefit-grid {
+    @apply grid grid-cols-3 md:grid-cols-5 gap-6 max-w-7xl mx-auto;
+  }
+
+  .benefit-title {
+    @apply text-lg font-semibold mb-2;
+  }
+
+  .benefit-description {
+    @apply text-sm text-gray-600;
   }
 
   /* PQF Table Styles */
   .pqf-table-container {
-    @apply my-8 overflow-x-auto;
+    @apply overflow-x-auto my-8 rounded-lg shadow-lg;
   }
 
   .pqf-table {
-    @apply w-full border-collapse bg-white rounded-lg shadow-lg overflow-hidden;
+    @apply min-w-full bg-white border-collapse;
   }
 
   .pqf-table th {
-    @apply bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-4 text-left font-semibold;
+    @apply px-6 py-4 text-left text-white font-semibold border-b;
+    @apply bg-gradient-to-r from-blue-600 to-blue-700;
   }
 
   .pqf-table td {
-    @apply px-6 py-4 border-b border-gray-200 transition-colors duration-200;
+    @apply px-6 py-4 border-b border-gray-200;
+    @apply transition-colors duration-200;
   }
 
-  .pqf-table tbody tr:hover {
+  .pqf-table tr:hover td {
     @apply bg-blue-50;
   }
 
   /* Timeline section - Enhanced */
   .timeline {
-    @apply relative pl-8 before:absolute before:left-0 before:top-0 before:bottom-0 before:w-0.5 before:bg-blue-200;
+    @apply relative mt-8;
+  }
+
+  .timeline::before {
+    content: '';
+    @apply absolute left-[20px] top-0 h-full w-0.5 bg-gradient-to-b from-blue-200 via-blue-400 to-blue-600;
   }
 
   .timeline-item {
-    @apply relative mb-12 opacity-0;
-    animation: fadeInUp 0.6s ease-out forwards;
+    @apply relative mb-12;
+  }
+
+  .timeline-dot-wrapper {
+    @apply absolute left-[10px] top-1/2 transform -translate-y-1/2;
+    z-index: 10;
   }
 
   .timeline-dot {
-    @apply absolute -left-[9px] w-4 h-4 rounded-full bg-blue-600 ring-4 ring-blue-100;
-    animation: pulse 2s infinite;
+    @apply w-[18px] h-[18px] rounded-full bg-blue-600 border-4 border-white;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.2);
+    animation: glow 2s ease-in-out infinite;
   }
 
   .timeline-date {
-    @apply text-sm font-semibold text-blue-600 mb-2;
+    @apply text-lg font-semibold text-blue-600 mb-2;
+  }
+
+  .timeline-content {
+    @apply bg-white p-6 rounded-lg shadow-md ml-6 transform transition-all duration-300;
+    @apply hover:shadow-lg hover:-translate-y-1;
+  }
+
+  @keyframes glow {
+    0%, 100% {
+      box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.2);
+    }
+    50% {
+      box-shadow: 0 0 0 8px rgba(37, 99, 235, 0.1);
+    }
   }
 
   .timeline-content {
     @apply text-gray-600 hover:text-gray-900 transition-colors duration-200;
+  }
+
+  /* Stats Grid */
+  .stats-card {
+    @apply relative p-6 bg-white rounded-xl shadow-lg overflow-hidden;
+    @apply transform transition-all duration-500 hover:shadow-xl hover:-translate-y-2;
+  }
+
+  .stats-value {
+    @apply text-4xl font-bold mb-2;
+    @apply bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent;
   }
 
   /* Animation Keyframes */
@@ -353,6 +437,17 @@
     }
   }
 
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
   /* Intersection Observer Animations */
   .fade-in-view {
     opacity: 0;
@@ -364,4 +459,30 @@
     opacity: 1;
     transform: translateY(0);
   }
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Programs */
+
+  .programs-list {
+    @apply mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8;
+  }
+
+  .programs-list-title {
+    @apply text-2xl font-bold tracking-tight text-gray-900;
+  }
+
+  .programs-list-grid {
+    @apply mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8;
+  }
+
 }

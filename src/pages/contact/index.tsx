@@ -6,9 +6,7 @@ const Contact = () => {
   return (
     <section className="contact-section">
       <h1 className="contact-title">Contact Us</h1>
-      <p className="contact-description">
-        Have questions or need assistance? Fill out the form below or reach out to us directly.
-      </p>
+
 
       <ContactDetails />
       <ContactForm />

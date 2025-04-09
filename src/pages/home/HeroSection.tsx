@@ -1,4 +1,4 @@
-import Button from '../../components/ui/Button_';
+import Button from '../../components/ui/custom/Button_';
 import Link from 'next/link';
 
 const HeroSection = () => {

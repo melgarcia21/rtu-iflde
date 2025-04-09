@@ -1,6 +1,6 @@
 // src/pages/news/index.tsx
 
-import Card from '../../components/ui/Card';
+import Card from '../../components/ui/custom/Card';
 
 const News = () => {
   const news = [

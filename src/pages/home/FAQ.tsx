@@ -1,4 +1,4 @@
-import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/shadcn/ui/accordion";
+import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/shadcnUI/accordion";
 import faqs from "@/data/faqs.json";
 
 const FAQ = () => {

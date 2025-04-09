@@ -1,6 +1,6 @@
 import React from 'react';
-import PQFTable from '@/components/ui/PQFTable';
-import StatsGrid from '@/components/ui/StatsGrid';
+import PQFTable from '@/components/ui/custom/PQFTable';
+import StatsGrid from '@/components/ui/custom/StatsGrid';
 
 const MicroCredentials = () => {
   return (

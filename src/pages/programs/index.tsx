@@ -1,4 +1,4 @@
-import CourseCard from '../../components/ui/CourseCard';
+import CourseCard from '../../components/ui/custom/CourseCard';
 import programs from '../../data/programs.json';
 
 const Programs = () => {

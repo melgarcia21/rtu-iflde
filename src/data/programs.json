@@ -1,18 +1,72 @@
 [
   {
-    "title": "Workflow Automation & Agentic AI Basics",
-    "content": "Courses for career growth.",
-    "tags": ["Top Choice", "AI"],
-    "duration": "1 Month",
-    "image": "/images/programs-image/sample-image.jpeg",
+    "title": "Digital Marketing Fundamentals",
+    "content": "Learn the core principles of digital marketing including SEO, social media, and content marketing.",
+    "tags": ["Top Choice", "Beginner"],
+    "image": "/images/programs-image/digital-marketing.jpg",
     "link": "/programs/1"
   },
   {
-    "title": "Visual Graphic Design",
-    "content": "Basics in Photoshop, Illustrator and InDesign.",
-    "tags": ["Beginner", "Graphic Design"],
-    "duration": "2 Months",
-    "image": "/images/programs-image/graphic-designing.jpg",
+    "title": "Data Analysis with Spreadsheets",
+    "content": "Use spreadsheets to organize, analyze, and visualize data through charts and basic statistics.",
+    "tags": ["Practical Skills", "Hands-On"],
+    "image": "/images/programs-image/data-analysis.jpg",
     "link": "/programs/2"
+  },
+  {
+    "title": "Effective Communication in the Workplace",
+    "content": "Improve written, verbal, and active listening skills for professional communication.",
+    "tags": ["Essential Skill", "Workplace Ready"],
+    "image": "/images/programs-image/workplace-communication.jpg",
+    "link": "/programs/3"
+  },
+  {
+    "title": "Basic Programming with Python",
+    "content": "Explore programming fundamentals using Python, from variables to control structures.",
+    "tags": ["Programming", "Beginner"],
+    "image": "/images/programs-image/python-programming.jpg",
+    "link": "/programs/4"
+  },
+  {
+    "title": "Customer Service Excellence",
+    "content": "Learn strategies to deliver exceptional customer experiences and build lasting loyalty.",
+    "tags": ["Client-Focused", "Career-Ready"],
+    "image": "/images/programs-image/customer-service.jpg",
+    "link": "/programs/5"
+  },
+  {
+    "title": "Introduction to Web Design",
+    "content": "Learn the basics of UI/UX design, HTML, and CSS to build effective websites..",
+    "tags": ["Creative", "Beginner"],
+    "image": "/images/programs-image/web-design.jpg",
+    "link": "/programs/6"
+  },
+  {
+    "title": "Machine Learning Basics",
+    "content": "An introduction to machine learning concepts, algorithms, and applications.",
+    "tags": ["Data Science", "Machine Learning"],
+    "image": "/images/programs-image/machine-learning.jpg",
+    "link": "/programs/7"
+  },
+  {
+    "title": "Visual Graphic Designing",
+    "content": "Learn the principles of visual design, including color theory, typography, and layout.",
+    "tags": ["Creative", "Beginner"],
+    "image": "/images/programs-image/graphic-designing.jpg",
+    "link": "/programs/8"
+  },
+  {
+    "title": "Project Management Essentials",
+    "content": "Understand project planning, execution, and monitoring across the project lifecycle.",
+    "tags": ["Essential Skill", "Top Choice"],
+    "image": "/images/programs-image/project-management.jpg",
+    "link": "/programs/9"
+  },
+  {
+    "title": "Financial Literacy for Professionals",
+    "content": "Learn the basics of personal finance, budgeting, and investment strategies.",
+    "tags": ["Finance", "Career-Ready"],
+    "image": "/images/programs-image/financial-literacy.jpg",
+    "link": "/programs/10"
   }
 ]

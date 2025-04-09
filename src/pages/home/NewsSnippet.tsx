@@ -1,7 +1,7 @@
 import React from 'react';
-import Card from '@/components/ui/Card';
+import Card from '@/components/ui/custom/Card';
 import Link from 'next/link';
-import Button from '@/components/ui/Button_';
+import Button from '@/components/ui/custom/Button_';
 
 const NewsSnippet = () => {
   const latestNews = [

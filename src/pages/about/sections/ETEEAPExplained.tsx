@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import ProcessDiagram from '@/components/ui/ProcessDiagram';
+import ProcessDiagram from '@/components/ui/custom/ProcessDiagram';
 
 const ETEEAPExplained = () => {
   return (

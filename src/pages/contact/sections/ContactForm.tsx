@@ -1,181 +1,429 @@
-import React, { useState } from 'react';
-import { BuildingOffice2Icon, PhoneIcon, EnvelopeIcon } from '@heroicons/react/24/outline';
+import React, { useState, ChangeEvent, FormEvent } from "react";
+import {
+  BuildingOffice2Icon,
+  PhoneIcon,
+  EnvelopeIcon,
+} from "@heroicons/react/24/outline";
 
-const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    message: '',
+// Define interface for privacy policy data
+interface PrivacyPolicySection {
+  heading: string;
+  content: string;
+}
+
+interface PrivacyPolicyData {
+  title: string;
+  introduction: string;
+  sections: PrivacyPolicySection[];
+  acceptButtonText: string;
+}
+
+// Import JSON with type assertion
+import privacyPolicyData from "@/data/contact/contact-form-privacy-policy.json";
+// Use type assertion to tell TypeScript about the structure
+const typedPrivacyPolicyData = privacyPolicyData as PrivacyPolicyData;
+
+// Define TypeScript interfaces
+interface FormData {
+  firstName: string;
+  lastName: string;
+  email: string;
+  phoneNumber: string;
+  message: string;
+  privacyPolicy: boolean;
+}
+
+interface FocusedState {
+  firstName: boolean;
+  lastName: boolean;
+  email: boolean;
+  phoneNumber: boolean;
+  message: boolean;
+}
+
+interface ErrorsState {
+  email?: string;
+  message?: string;
+  privacyPolicy?: string;
+  [key: string]: string | undefined;
+}
+
+const ContactForm: React.FC = () => {
+  const [formData, setFormData] = useState<FormData>({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phoneNumber: "",
+    message: "",
+    privacyPolicy: false,
   });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
+  const [focused, setFocused] = useState<FocusedState>({
+    firstName: false,
+    lastName: false,
+    email: false,
+    phoneNumber: false,
+    message: false,
+  });
+
+  const [errors, setErrors] = useState<ErrorsState>({});
+  const [showPrivacyPolicy, setShowPrivacyPolicy] = useState<boolean>(false);
+
+  const handleFocus = (field: keyof FocusedState): void => {
+    setFocused({
+      ...focused,
+      [field]: true,
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleBlur = (field: keyof FocusedState): void => {
+    setFocused({
+      ...focused,
+      [field]: formData[field].length > 0,
+    });
+  };
+
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>): void => {
+    const { name, value, type, checked } = e.target as HTMLInputElement;
+    setFormData({
+      ...formData,
+      [name]: type === "checkbox" ? checked : value,
+    });
+
+    // Clear error when user types
+    if (errors[name]) {
+      setErrors({
+        ...errors,
+        [name]: "",
+      });
+    }
+  };
+
+  const validateForm = (): boolean => {
+    const newErrors: ErrorsState = {};
+
+    if (!formData.email) {
+      newErrors.email = "Email is required";
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      newErrors.email = "Email is invalid";
+    }
+
+    if (!formData.message) {
+      newErrors.message = "Message is required";
+    }
+
+    if (!formData.privacyPolicy) {
+      newErrors.privacyPolicy = "You must agree to the Privacy Policy";
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const handleSubmit = (e: FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
-    console.log('Form submitted:', JSON.stringify(formData, null, 2));
-    // Here you would typically send the data to your backend
-    alert('Form submitted! Check console for JSON output.');
+
+    if (validateForm()) {
+      // Create JSON file with form data
+      const jsonData = JSON.stringify(formData, null, 2);
+
+      // In a real application, you would send this data to your server
+      console.log("Form submitted:", jsonData);
+
+      // For demonstration, create and download a JSON file
+      const blob = new Blob([jsonData], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = "contact_form_data.json";
+      link.click();
+
+      // Reset form
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phoneNumber: "",
+        message: "",
+        privacyPolicy: false,
+      });
+
+      setFocused({
+        firstName: false,
+        lastName: false,
+        email: false,
+        phoneNumber: false,
+        message: false,
+      });
+    }
+  };
+
+  const acceptPrivacyPolicy = (): void => {
+    setShowPrivacyPolicy(false);
+    setFormData({
+      ...formData,
+      privacyPolicy: true,
+    });
+    setErrors({
+      ...errors,
+      privacyPolicy: "",
+    });
   };
 
   return (
-    <div className="contact-section relative isolate bg-gray-900 py-24 sm:py-32">
+    <div className="contact-section">
       {/* Background effects */}
-      <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
-        <div
-          className="relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]"
-          style={{
-            clipPath:
-              'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-          }}
-        />
+      <div className="background-top-effect">
+        <div className="gradient-blob" />
       </div>
-      
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="lg:grid lg:grid-cols-2 lg:gap-x-12">
-          {/* Left column - Contact info */}
-          <div className="contact-info flex flex-col justify-start pt-10 lg:pt-0">
-            <h2 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">Get in touch</h2>
-            <p className="mt-6 text-lg leading-8 text-gray-300">
-              Have questions or need assistance? Fill out the form below or reach out to us directly.
-              <br />
-              <br />
-              Contact RTU Institute of Flexible Learning and Distance Education Office for more info about the program. 
-            </p>
-            <div className="mt-10 space-y-6">
-              <div className="flex items-center gap-x-4">
-                <BuildingOffice2Icon className="h-6 w-6 flex-none text-gray-400" aria-hidden="true" />
-                <div>
-                  <p className="text-gray-300">Rizal Technological University, 704 Boni Ave. 
-                    Cor Sacrepante, Mandaluyong
-                    </p>
 
+      <div className="content-container">
+        <div className="two-column-layout">
+          {/* Left column - Contact info */}
+          <div className="contact-info">
+            <h2 className="heading-large">
+              Get in touch
+            </h2>
+            <p className="description-text">
+              <br />
+              Contact RTU Institute of Flexible Learning and Distance Education
+              Office for more info about the program or reach out to us directly.
+            </p>
+            <div className="contact-details">
+              <div className="contact-item">
+                <BuildingOffice2Icon
+                  className="contact-icon"
+                  aria-hidden="true"
+                />
+                <div>
+                  <p className="contact-text">
+                    Rizal Technological University, 704 Boni Ave. Cor
+                    Sacrepante, Mandaluyong
+                  </p>
                 </div>
               </div>
-              <div className="flex items-center gap-x-4">
-                <PhoneIcon className="h-6 w-6 flex-none text-gray-400" aria-hidden="true" />
-                <p className="text-gray-300">+63 976 047 2582</p>
+              <div className="contact-item">
+                <PhoneIcon
+                  className="contact-icon"
+                  aria-hidden="true"
+                />
+                <p className="contact-text">+63 976 047 2582</p>
               </div>
-              <div className="flex items-center gap-x-4">
-                <EnvelopeIcon className="h-6 w-6 flex-none text-gray-400" aria-hidden="true" />
-                <p className="text-gray-300">rtu-iflde@gmail.com</p>
+              <div className="contact-item">
+                <EnvelopeIcon
+                  className="contact-icon"
+                  aria-hidden="true"
+                />
+                <p className="contact-text">rtu-iflde@gmail.com</p>
               </div>
             </div>
           </div>
 
           {/* Right column - Form */}
-          <div className="contact-form mt-12 lg:mt-0">
-            <form onSubmit={handleSubmit} className="mt-8 space-y-6">
-              <div className="grid grid-cols-1 gap-y-6 gap-x-8 sm:grid-cols-2">
-                <div>
-                  <label htmlFor="firstName" className="block text-sm font-medium text-white">
-                    First name
-                  </label>
-                  <div className="mt-2">
+          <div className="form-container">
+            <div className="contact-form-container">
+              <h1 className="form-title">Reach us!</h1>
+              <p className="form-subtitle">
+              Have questions or need assistance? Feel free to fill out the form below.
+              </p>
+
+              <form onSubmit={handleSubmit} className="contact-form">
+                <div className="form-row">
+                  <div className="form-group">
+                    <div
+                      className={`input-container ${
+                        focused.firstName ? "focused" : ""
+                      }`}
+                    >
+                      <label htmlFor="firstName" className="input-label">
+                        First Name
+                      </label>
+                      <input
+                        type="text"
+                        id="firstName"
+                        name="firstName"
+                        className="form-input"
+                        value={formData.firstName}
+                        onChange={handleChange}
+                        onFocus={() => handleFocus("firstName")}
+                        onBlur={() => handleBlur("firstName")}
+                      />
+                    </div>
+                  </div>
+
+                  <div className="form-group">
+                    <div
+                      className={`input-container ${
+                        focused.lastName ? "focused" : ""
+                      }`}
+                    >
+                      <label htmlFor="lastName" className="input-label">
+                        Last Name
+                      </label>
+                      <input
+                        type="text"
+                        id="lastName"
+                        name="lastName"
+                        className="form-input"
+                        value={formData.lastName}
+                        onChange={handleChange}
+                        onFocus={() => handleFocus("lastName")}
+                        onBlur={() => handleBlur("lastName")}
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div className="form-group">
+                  <div
+                    className={`input-container ${focused.email ? "focused" : ""} ${
+                      errors.email ? "error" : ""
+                    }`}
+                  >
+                    <label htmlFor="email" className="input-label">
+                      Email
+                    </label>
                     <input
-                      type="text"
-                      name="firstName"
-                      id="firstName"
-                      autoComplete="given-name"
-                      value={formData.firstName}
+                      type="email"
+                      id="email"
+                      name="email"
+                      className="form-input"
+                      value={formData.email}
                       onChange={handleChange}
-                      className="block w-full rounded-md border-0 bg-gray-800/50 py-2 px-3.5 text-white shadow-sm ring-1 ring-inset ring-gray-700 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                      onFocus={() => handleFocus("email")}
+                      onBlur={() => handleBlur("email")}
+                      required
+                    />
+                    {errors.email && (
+                      <span className="error-message">{errors.email}</span>
+                    )}
+                  </div>
+                </div>
+
+                <div className="form-group">
+                  <div
+                    className={`input-container ${
+                      focused.phoneNumber ? "focused" : ""
+                    }`}
+                  >
+                    <label htmlFor="phoneNumber" className="input-label">
+                      Phone Number
+                    </label>
+                    <input
+                      type="tel"
+                      id="phoneNumber"
+                      name="phoneNumber"
+                      className="form-input"
+                      value={formData.phoneNumber}
+                      onChange={handleChange}
+                      onFocus={() => handleFocus("phoneNumber")}
+                      onBlur={() => handleBlur("phoneNumber")}
                     />
                   </div>
                 </div>
-                <div>
-                  <label htmlFor="lastName" className="block text-sm font-medium text-white">
-                    Last name
-                  </label>
-                  <div className="mt-2">
-                    <input
-                      type="text"
-                      name="lastName"
-                      id="lastName"
-                      autoComplete="family-name"
-                      value={formData.lastName}
+
+                <div className="form-group">
+                  <div
+                    className={`input-container ${focused.message ? "focused" : ""} ${
+                      errors.message ? "error" : ""
+                    }`}
+                  >
+                    <label htmlFor="message" className="input-label">
+                      Message
+                    </label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      className="form-textarea"
+                      value={formData.message}
                       onChange={handleChange}
-                      className="block w-full rounded-md border-0 bg-gray-800/50 py-2 px-3.5 text-white shadow-sm ring-1 ring-inset ring-gray-700 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                      onFocus={() => handleFocus("message")}
+                      onBlur={() => handleBlur("message")}
+                      required
+                      rows={4}
                     />
+                    {errors.message && (
+                      <span className="error-message">{errors.message}</span>
+                    )}
                   </div>
                 </div>
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-white">
-                  Email
-                </label>
-                <div className="mt-2">
-                  <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    autoComplete="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="block w-full rounded-md border-0 bg-gray-800/50 py-2 px-3.5 text-white shadow-sm ring-1 ring-inset ring-gray-700 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-                  />
-                </div>
-              </div>
-              <div>
-                <label htmlFor="phone" className="block text-sm font-medium text-white">
-                  Phone number
-                </label>
-                <div className="mt-2">
-                  <input
-                    type="tel"
-                    name="phone"
-                    id="phone"
-                    autoComplete="tel"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    className="block w-full rounded-md border-0 bg-gray-800/50 py-2 px-3.5 text-white shadow-sm ring-1 ring-inset ring-gray-700 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-                  />
-                </div>
-              </div>
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-white">
-                  Message
-                </label>
-                <div className="mt-2">
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows={4}
-                    value={formData.message}
-                    onChange={handleChange}
-                    className="block w-full rounded-md border-0 bg-gray-800/50 py-2 px-3.5 text-white shadow-sm ring-1 ring-inset ring-gray-700 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-                  />
-                </div>
-              </div>
-              <div className="flex justify-end">
-                <button
-                  type="submit"
-                  className="rounded-md bg-indigo-500 px-6 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+
+                <div
+                  className={`checkbox-container ${
+                    errors.privacyPolicy ? "error" : ""
+                  }`}
                 >
-                  Send message
+                  <label className="checkbox-label">
+                    <input
+                      type="checkbox"
+                      name="privacyPolicy"
+                      className="checkbox-input"
+                      checked={formData.privacyPolicy}
+                      onChange={handleChange}
+                      required
+                    />
+                    <span className="custom-checkbox"></span>
+                    <span>
+                      You agree to your friendly{" "}
+                      <button
+                        type="button"
+                        className="privacy-policy-link"
+                        onClick={() => setShowPrivacyPolicy(true)}
+                      >
+                        Privacy Policy
+                      </button>
+                      .
+                    </span>
+                  </label>
+                  {errors.privacyPolicy && (
+                    <span className="error-message">{errors.privacyPolicy}</span>
+                  )}
+                </div>
+
+                <button type="submit" className="submit-button">
+                  SEND MESSAGE
                 </button>
-              </div>
-            </form>
+              </form>
+
+              {showPrivacyPolicy && (
+                <div className="privacy-policy-modal">
+                  <div className="privacy-policy-content">
+                    <button
+                      type="button"
+                      className="close-button"
+                      onClick={() => setShowPrivacyPolicy(false)}
+                    >
+                      ×
+                    </button>
+
+                    <div className="privacy-policy-text">
+                    <h2>{typedPrivacyPolicyData.title}</h2>
+
+                      {typedPrivacyPolicyData.sections.map((section, index) => (
+                        <div key={index}>
+                          <h3>{section.heading}</h3>
+                          <p>{section.content}</p>
+                        </div>
+                      ))}
+                    </div>
+                    <button
+                      type="button"
+                      className="accept-button"
+                      onClick={acceptPrivacyPolicy}
+                    >
+                      {typedPrivacyPolicyData.acceptButtonText}
+                    </button>
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>
-      
+
       {/* Bottom background effect */}
-      <div className="absolute inset-x-0 bottom-0 -z-10 transform-gpu overflow-hidden blur-3xl" aria-hidden="true">
-        <div
-          className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-          style={{
-            clipPath:
-              'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-          }}
-        />
+      <div className="background-bottom-effect" aria-hidden="true">
+        <div className="gradient-blob-bottom" />
       </div>
     </div>
   );

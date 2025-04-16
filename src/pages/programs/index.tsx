@@ -1,5 +1,5 @@
 import CourseCard from '../../components/ui/custom/CourseCard';
-import programs from '../../data/programs.json';
+import programs from '../../data/programs/programs.json';
 
 const Programs = () => {
   return (

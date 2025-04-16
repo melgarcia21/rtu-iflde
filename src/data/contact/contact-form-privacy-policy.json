@@ -1,0 +1,23 @@
+{
+    "title": "Privacy Policy",
+    "introduction": " ",
+    "sections": [
+      {
+        "heading": " ",
+        "content": "When you use our contact form, we collect the information you provide, which may include your name, email address, phone number, and any message content you share with us."
+      },
+      {
+        "heading": "How We Use Your Personal Information",
+        "content": "We use the information you provide via the contact form to communicate with you and address your inquiries or requests."
+      },
+      {
+        "heading": "Your Rights",
+        "content": "You have the right to access, correct, or delete your personal information at any time. Please contact us for assistance with these requests."
+      },
+      {
+        "heading": "Data Retention",
+        "content": "We will maintain your contact information only for as long as necessary to respond to your inquiry."
+      }
+    ],
+    "acceptButtonText": "I Agree"
+  }

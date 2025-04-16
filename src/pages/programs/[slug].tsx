@@ -1,5 +1,5 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
-import programs from '../../data/programs.json';
+import programs from '../../data/programs/programs.json';
 import { useRouter } from 'next/router';
 
 type Program = {

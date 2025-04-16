@@ -1,0 +1,102 @@
+[
+  {
+    "category": "General Information & RTU-IFLDE",
+    "questions": [
+      {
+        "question": "What is RTU-IFLDE?",
+        "answer": "IFLDE stands for the Institute of Flexible Learning and Digital Education. It's a part of Rizal Technological University (RTU) dedicated to offering modern, flexible learning programs online and through other non-traditional methods to suit busy schedules."
+      },
+      {
+        "question": "What is FlexiLearnPro?",
+        "answer": "FlexiLearnPro is the name of the initiative or project by RTU-IFLDE. Its goal is to carefully research and develop high-quality flexible learning programs, like ETEEAP and Micro-credentials, by studying the best practices of other successful universities."
+      },
+      {
+        "question": "What kinds of programs does IFLDE offer or plan to offer?",
+        "answer": "IFLDE is currently developing its Expanded Tertiary Education, Equivalency and Accreditation Program (ETEEAP) offerings. In the future, it also plans to offer various Micro-credentials and other flexible certificate or degree programs."
+      },
+      {
+        "question": "Who are these flexible programs for?",
+        "answer": "These programs are designed for a wide range of learners, including working professionals who want to advance their careers, undergraduate or graduate students seeking flexible options, adults looking to upskill or reskill, and anyone committed to lifelong learning."
+      },
+      {
+        "question": "Why should I choose a program from RTU-IFLDE?",
+        "answer": "IFLDE focuses on providing quality education that fits your life. Programs are designed based on thorough research (like the FlexiLearnPro benchmarking) and aim to align with industry needs and official CHED standards, offering you relevant skills and recognized qualifications flexibly."
+      }
+    ]
+  },
+  {
+    "category": "About Micro-credentials (MCs)",
+    "questions": [
+      {
+        "question": "What exactly is a Micro-credential (MC)?",
+        "answer": "Think of a Micro-credential as a mini-qualification or a short, focused course. It certifies that you've mastered a specific skill or a small set of skills and knowledge, often relevant to a particular job or industry task."
+      },
+      {
+        "question": "What's the difference between 'stackable' and 'non-stackable' MCs?",
+        "answer": "'Stackable' MCs are designed like building blocks – you can potentially combine several of them over time to count towards a larger qualification, like a full degree. 'Non-stackable' MCs are usually standalone courses focused on a specific skill and typically don't add up towards a degree."
+      },
+      {
+        "question": "Can I get college credits for taking a Micro-credential?",
+        "answer": "Yes, some Micro-credentials offered by RTU-IFLDE will be 'for-credit,' meaning they carry actual college credits (like regular subjects) that might count towards a degree, subject to CHED rules. There will also be 'non-credit' options focused purely on skill development."
+      },
+      {
+        "question": "How long does it take to finish a Micro-credential?",
+        "answer": "Micro-credentials are much shorter than traditional degree programs. The time commitment can vary, ranging from as little as 17 hours to several hundred hours, depending on the specific skill and depth of the course. They are designed to be completed relatively quickly."
+      },
+      {
+        "question": "Are Micro-credentials from RTU-IFLDE officially recognized?",
+        "answer": "Yes, RTU-IFLDE is committed to developing and offering Micro-credentials that meet the quality standards and guidelines set by the Commission on Higher Education (CHED). For-credit MCs will follow CHED's recognition and approval process, ensuring their validity."
+      }
+    ]
+  },
+  {
+    "category": "About ETEEAP",
+    "questions": [
+      {
+        "question": "What is ETEEAP?",
+        "answer": "ETEEAP stands for Expanded Tertiary Education, Equivalency and Accreditation Program. It's a program recognized by CHED that allows Filipinos with significant work experience to earn a relevant Bachelor's degree without starting from scratch, by having their knowledge and skills learned on the job assessed and credited."
+      },
+      {
+        "question": "Who is eligible to apply for the ETEEAP program?",
+        "answer": "Generally, ETEEAP is for Filipino professionals who have worked for at least five years in an industry relevant to the degree they want to pursue. They should also meet other specific requirements set by CHED and the university (RTU)."
+      },
+      {
+        "question": "How does ETEEAP work at RTU-IFLDE?",
+        "answer": "Through ETEEAP at RTU, your work experience and prior learning will be carefully assessed. We'll identify the knowledge and skills you already have that match the degree requirements. If there are gaps, IFLDE will provide flexible learning options (like modules, projects, or specific courses) to help you complete the remaining requirements for the degree."
+      },
+      {
+        "question": "Will ETEEAP classes be fully online or face-to-face?",
+        "answer": "RTU-IFLDE aims to offer ETEEAP through flexible learning modes. This might include fully online, blended (a mix of online and some face-to-face sessions), or distance learning, depending on the specific program and assessment needs, making it suitable for working professionals."
+      },
+      {
+        "question": "What are the main benefits of getting a degree through ETEEAP?",
+        "answer": "The main benefits include finally earning a formal Bachelor's degree, gaining official recognition for the skills and knowledge you've acquired through years of work, improving your career advancement opportunities, and achieving personal fulfillment, all through a flexible pathway."
+      }
+    ]
+  },
+  {
+    "category": "Enrollment, Credits & Recognition",
+    "questions": [
+      {
+        "question": "How do I figure out which IFLDE program (ETEEAP or MC) is right for me?",
+        "answer": "Start by reading the detailed descriptions, target audience, and learning outcomes listed on the 'Programs' page of this website. Think about your goals – do you need a full degree (ETEEAP) or a specific skill (MC)? You can also contact the IFLDE office for guidance."
+      },
+      {
+        "question": "If I take Micro-credentials, how many can count towards an RTU degree?",
+        "answer": "According to CHED guidelines, for a Bachelor's degree, a maximum of 30 units can be earned through credited Micro-credentials. For Master's or Doctoral degrees, it's generally up to 30% (around one-third) of the total units required for the program."
+      },
+      {
+        "question": "What's the general application process like?",
+        "answer": "First, check the specific admission requirements listed on the program's detail page on this website. Usually, you'll need to submit required documents (like transcripts, proof of work experience for ETEEAP). There might be an assessment process, especially for ETEEAP candidates."
+      },
+      {
+        "question": "Are the certificates or degrees I get from RTU-IFLDE programs valid?",
+        "answer": "Absolutely. Rizal Technological University is a state university recognized by CHED. All programs offered through IFLDE, including ETEEAP and for-credit Micro-credentials, will follow CHED's standards for quality, curriculum, and official recognition, ensuring the validity of your qualification."
+      },
+      {
+        "question": "Will employers recognize these Micro-credentials or ETEEAP degrees?",
+        "answer": "Yes. ETEEAP is a CHED-recognized pathway. For Micro-credentials, RTU-IFLDE is committed to partnering with industries in designing the courses (as required by CHED) to ensure they teach relevant, in-demand skills that employers value."
+      }
+    ]
+  }
+]

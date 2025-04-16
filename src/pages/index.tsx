@@ -3,7 +3,7 @@ import Introduction from "./home/Introduction";
 import FeaturedProgram from "./home/FeaturedProgram";
 import HowItWorks from "./home/HowItWorks";
 import NewsSnippet from "./home/NewsSnippet";
-import FAQ from "./home/FAQ";
+import FAQSection from "./home/FAQSection";
 
 
 const Home = () => {
@@ -11,13 +11,11 @@ const Home = () => {
     <div className="flex flex-col gap-10">
       <HeroSection />
 
-
-
       <Introduction />
       <HowItWorks />
       <FeaturedProgram />
       <NewsSnippet />
-      <FAQ />
+      <FAQSection />
     </div>
   );
 };

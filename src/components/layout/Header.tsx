@@ -17,9 +17,9 @@ const Header = () => {
             width={100}
             height={100}
           />
-          {/* Vertical Separator Line */}
+
           <div className="header-separator"></div>
-          {/* University Text */}
+
           <div className="header-university-text">
             <p className="header-university-name">
               RIZAL TECHNOLOGICAL UNIVERSITY
@@ -43,16 +43,15 @@ const Header = () => {
             <h1 className="header-title">
               Institute of Flexible Learning
               <br />
-              and Digital. Education
+              and Digital Education
             </h1>
-            {/* Horizontal Separator Line */}
+
             <div className="header-horizontal-line"></div>
             <p className="header-subtitle">
               Forging Excellence in Borderless and Innovative Education
             </p>
           </div>
         </div>
-
       </div>
     </div>
   );

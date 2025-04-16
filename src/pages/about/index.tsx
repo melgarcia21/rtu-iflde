@@ -13,7 +13,7 @@ const About = () => {
       <Head>
         <title>About RTU-IFLDE</title>
         <meta 
-          name="description" 
+          name="Institute of Flexible Learning and Digital Education" 
           content="Learn about RTU's Institute of Flexible Learning and Digital Education, our mission, programs, and partnerships." 
         />
       </Head>

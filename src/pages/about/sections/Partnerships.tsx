@@ -59,52 +59,52 @@ const Partnerships = () => {
   ];
 
   return (
-    <div className="py-16">
-      <h2 className="text-3xl font-bold text-center mb-12">Our Partners</h2>
+    <div className="partnerships-section">
+      <h2 className="partnerships-title">Our Partners</h2>
       
-      <p className="text-lg text-gray-600 text-center max-w-4xl mx-auto mb-16">
+      <p className="partnerships-description">
         RTU-IFLDE collaborates with leading institutions and organizations to deliver high-quality flexible learning programs and ensure continuous improvement of our educational offerings.
       </p>
 
-      <div className="mb-20">
-        <h3 className="text-2xl font-semibold text-center mb-12">Featured Partners</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center justify-items-center max-w-6xl mx-auto">
+      <div className="partners-section">
+        <h3 className="partners-title">Featured Partners</h3>
+        <div className="partners-grid">
           {partners.map((partner) => (
-            <div key={partner.name} className="text-center">
-              <div className="relative w-64 h-64">
+            <div key={partner.name} className="partner-card">
+              <div className="partner-logo">
                 <Image
                   src={partner.logo}
                   alt={partner.name}
                   fill
-                  className="object-contain hover:scale-110 transition-transform duration-300"
+                  className="partner-logo-image"
                 />
               </div>
-              <p className="mt-4 text-xl font-semibold">{partner.name}</p>
-              <p className="text-gray-600">{partner.description}</p>
+              <p className="partner-name">{partner.name}</p>
+              <p className="partner-description">{partner.description}</p>
             </div>
           ))}
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto">
-        <h3 className="text-2xl font-semibold text-center mb-12">Partnership Benefits</h3>
-        <div className="grid grid-cols-3 md:grid-cols-5 gap-6">
+      <div className="benefits-section">
+        <h3 className="benefits-title">Partnership Benefits</h3>
+        <div className="benefits-grid">
           {benefits.map((benefit) => (
             <div key={benefit.title} className="benefit-card">
-              <div className="relative w-full aspect-square mb-4">
+              <div className="benefit-image-container">
                 <Image
                   src={benefit.image}
                   alt={benefit.title}
                   fill
-                  className="object-cover rounded-lg"
+                  className="benefit-image"
                 />
               </div>
-              <h4 className="font-semibold mb-2">{benefit.title}</h4>
-              <p className="text-sm text-gray-600">{benefit.description}</p>
+              <h4 className="benefit-title">{benefit.title}</h4>
+              <p className="benefit-description">{benefit.description}</p>
             </div>
           ))}
         </div>
-      </div>
+      </div>                                                                           
     </div>
   );
 };

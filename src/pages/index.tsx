@@ -5,6 +5,8 @@ import HowItWorks from "./home/HowItWorks";
 import NewsSnippet from "./home/NewsSnippet";
 import FAQSection from "./home/FAQSection";
 
+import HowItWorks_ from "./home/HowItWorks_";
+
 
 const Home = () => {
   return (
@@ -12,6 +14,7 @@ const Home = () => {
       <HeroSection />
 
       <Introduction />
+      <HowItWorks_ />
       <HowItWorks />
       <FeaturedProgram />
       <NewsSnippet />

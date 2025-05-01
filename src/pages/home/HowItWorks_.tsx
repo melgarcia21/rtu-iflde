@@ -1,34 +1,35 @@
 import {
-  ArrowPathIcon,
+  IdentificationIcon,
+  BookOpenIcon,
   CloudArrowUpIcon,
-  FingerPrintIcon,
-  LockClosedIcon,
+  CheckBadgeIcon,
 } from "@heroicons/react/24/outline";
+
 
 const features = [
   {
-    name: "Push to deploy",
+    name: "Assess Needs",
     description:
-      "Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.",
+      "We identify your educational requirements and career goals",
+    icon: IdentificationIcon,
+  },
+  {
+    name: "Design Programs",
+    description:
+      "Programs are crafted using research-backed methods and benchmarking",
+    icon: BookOpenIcon,
+  },
+  {
+    name: "Deliver Flexibly",
+    description:
+      "Learn through various modalities that fit your schedule",
     icon: CloudArrowUpIcon,
   },
   {
-    name: "SSL certificates",
+    name: "Ensure Quality",
     description:
-      "Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.",
-    icon: LockClosedIcon,
-  },
-  {
-    name: "Simple queues",
-    description:
-      "Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.",
-    icon: ArrowPathIcon,
-  },
-  {
-    name: "Advanced security",
-    description:
-      "Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.",
-    icon: FingerPrintIcon,
+      "Continuous monitoring and improvement of learning outcomes",
+    icon: CheckBadgeIcon,
   },
 ];
 
@@ -37,11 +38,8 @@ const HowItWorks = () => {
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-base/7 font-semibold text-indigo-600">
-            Deploy faster
-          </h2>
           <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl lg:text-balance">
-            Everything you need to deploy your app
+            How FlexiLearnPro Works
           </p>
           <p className="mt-6 text-lg/8 text-gray-600">
             Quis tellus eget adipiscing convallis sit sit eget aliquet quis.

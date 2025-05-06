@@ -1,6 +1,6 @@
 import ContactDetails from "./sections/ContactDetails";
 import ContactForm from "./sections/ContactForm";
-import MapEmbed from "./sections/MapEmbed";
+// import MapEmbed from "./sections/MapEmbed";
 
 const Contact = () => {
   return (

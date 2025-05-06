@@ -1,7 +1,7 @@
-import HeroSection from "./home/HeroSection";
+// import HeroSection from "./home/HeroSection";
 import Introduction from "./home/Introduction";
 import FeaturedProgram from "./home/FeaturedProgram";
-import HowItWorks from "./home/HowItWorks";
+// import HowItWorks from "./home/HowItWorks";
 import NewsSnippet from "./home/NewsSnippet";
 import FAQSection from "./home/FAQSection";
 

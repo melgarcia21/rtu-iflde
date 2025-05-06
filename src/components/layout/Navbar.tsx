@@ -9,7 +9,7 @@ import {
   PhoneIcon as PhoneOutline,
   Bars3Icon as MenuIcon, 
   XMarkIcon as XIcon, 
-  UserCircleIcon as UserIcon,
+
 } from "@heroicons/react/24/outline";
 
 import {
@@ -138,13 +138,6 @@ const Navbar = () => {
                 <MenuIcon className="h-6 w-6" />
               )}
             </button>
-
-            {/* Profile Icon */}
-            <div className="navbar-actions">
-              <button className="profile-button" aria-label="User Profile">
-                <UserIcon className="profile-icon" />
-              </button>
-            </div>
           </div>
         </div>
 

@@ -10,8 +10,6 @@ const Contact = () => {
 
       <ContactDetails />
       <ContactForm />
-      <MapEmbed />
-
 
     </section>
   );

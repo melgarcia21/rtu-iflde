@@ -74,15 +74,14 @@
         @apply text-sm md:text-base lg:text-lg;
     }
 
-    /* Navbar Styles
-----------------------------------------*/
+    /* Navbar Styles --*/
     /* Main Navbar */
     .navbar {
         @apply relative z-50 py-1 md:py-4 bg-[#35193E] text-white transition-all duration-300;
     }
 
     .navbar-container {
-        @apply h-12 md:h-14 max-w-7xl mx-auto px-4 flex items-center justify-between;
+        @apply h-6 md:h-6 max-w-7xl mx-auto px-4 flex items-center justify-between;
     }
 
     /* Navbar Brand */
@@ -102,11 +101,17 @@
 
     /* Link Text & Hover Effects */
     .link-text {
-        @apply relative;
+        @apply relative text-sm font-semibold text-white uppercase antialiased;
+        font-family: 'Poppins', sans-serif;
     }
 
     .link-text::after {
         @apply content-[''] absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-100 ease-in-out;
+    }
+    
+    .link-text::first-letter {
+        font-size: 20px; 
+        font-weight: semibold; 
     }
 
     .navbar-link:hover .link-text::after {

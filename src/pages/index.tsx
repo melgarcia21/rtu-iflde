@@ -11,11 +11,11 @@ import HowItWorks_ from "./home/HowItWorks_";
 const Home = () => {
   return (
     <div className="flex flex-col gap-10">
-      <HeroSection />
+
 
       <Introduction />
       <HowItWorks_ />
-      <HowItWorks />
+
       <FeaturedProgram />
       <NewsSnippet />
       <FAQSection />

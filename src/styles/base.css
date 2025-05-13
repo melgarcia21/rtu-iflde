@@ -7,8 +7,8 @@
     --background: #ffffff;
     --foreground: #171717;
     --scrollbar-track: #35193E;
-    --scrollbar-thumb: #938E6D;
-    --scrollbar-thumb-hover: #c0bc99;
+    --scrollbar-thumb: #ffffff;
+    --scrollbar-thumb-hover: #ffffff;
     --radius: 0.625rem;
     --card: oklch(1 0 0);
     --card-foreground: oklch(0.145 0 0);
@@ -114,7 +114,7 @@ body {
 
     /* Firefox */
     * {
-        scrollbar-width: thin;
+        scrollbar-width: thick;
         scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
     }
 }

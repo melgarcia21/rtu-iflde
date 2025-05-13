@@ -86,8 +86,8 @@
 
     /* Navbar Brand */
     .navbar-brand {
-        @apply text-xl md:text-3xl font-bold hover:text-purple-300;
-        font-family: 'Poppins', sans-serif;
+        @apply text-lg md:text-2xl font-bold hover:text-purple-300;
+        font-family: 'Open Sans', sans-serif;
     }
 
     /* Desktop Navigation Links */
@@ -102,17 +102,14 @@
     /* Link Text & Hover Effects */
     .link-text {
         @apply relative text-sm font-semibold text-white uppercase antialiased;
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Open Sans', sans-serif;
     }
 
     .link-text::after {
         @apply content-[''] absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-100 ease-in-out;
     }
     
-    .link-text::first-letter {
-        font-size: 20px; 
-        font-weight: semibold; 
-    }
+
 
     .navbar-link:hover .link-text::after {
         @apply w-full;
@@ -120,24 +117,16 @@
 
     /* Icons */
     .navbar-icon {
-        @apply h-5 w-5 md:h-7 md:w-7;
+        @apply h-4 w-4 md:h-6 md:w-6;
     }
 
     .icon-wrapper {
-        @apply relative w-6 h-6 md:w-7 md:h-7;
+        @apply relative w-5 h-5 md:w-6 md:h-6;
     }
 
     /* Profile Section */
     .navbar-actions {
         @apply flex items-center space-x-4;
-    }
-
-    .profile-button {
-        @apply w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-full bg-white hover:bg-gray-200 transition-all duration-300;
-    }
-
-    .profile-icon {
-        @apply h-6 w-6 md:h-7 md:w-7 text-black;
     }
 
     /* Mobile Menu Button */
@@ -272,6 +261,5 @@
     .footer-social-icon {
         @apply hover:text-white text-lg;
     }
-
 
 }

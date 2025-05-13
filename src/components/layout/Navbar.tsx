@@ -105,7 +105,7 @@ const Navbar = () => {
         <div className="navbar-container">
           {/* Brand */}
           <Link href="/" scroll={false} className="navbar-brand">
-            RTU <span className="iflde-highlight">IFLDE</span>
+            IFLDE
           </Link>
 
           {/* Desktop Navigation Links */}

@@ -4,7 +4,7 @@
 
   /** Hero Section **/
   .hero-section {
-    @apply relative min-h-[600px] bg-gradient-to-r from-blue-900 to-blue-700;
+    @apply relative min-h-[600px] bg-gradient-to-r from-purple-900 to-purple-700;
     @apply text-white flex items-center justify-center;
   }
 
@@ -17,29 +17,10 @@
   }
 
   .hero-subtitle {
-    @apply text-xl md:text-2xl mb-8 text-blue-100;
+    @apply text-xl md:text-2xl mb-8 text-purple-100;
   }
 
-  /** Introduction **/
-  .intro-section {
-    @apply py-16 bg-white;
-  }
 
-  .intro-container {
-    @apply container mx-auto px-4;
-  }
-
-  .intro-content {
-    @apply max-w-4xl mx-auto text-center;
-  }
-
-  .intro-title {
-    @apply text-3xl font-bold mb-6 text-gray-900;
-  }
-
-  .intro-description {
-    @apply text-lg text-gray-600 leading-relaxed;
-  }
 
   /** How It Works **/
   .how-it-works-section {
@@ -63,7 +44,7 @@
   }
 
   .step-number {
-    @apply w-12 h-12 rounded-full bg-blue-800 text-white flex items-center justify-center text-xl font-bold mb-4;
+    @apply w-12 h-12 rounded-full bg-purple-800 text-white flex items-center justify-center text-xl font-bold mb-4;
   }
 
   .step-title {
@@ -74,30 +55,9 @@
     @apply text-gray-600;
   }
 
-  /** Featured Program **/
-  .featured-program-section {
-    @apply py-16 bg-white;
-  }
-
-  .featured-program-container {
-    @apply container mx-auto px-4;
-  }
-
-  .featured-program-content {
-    @apply max-w-4xl mx-auto;
-  }
-
-  .featured-program-title {
-    @apply text-3xl font-bold mb-6 text-gray-900;
-  }
-
-  .featured-program-description {
-    @apply text-lg text-gray-600 mb-8;
-  }
-
   /** News Snippet **/
   .news-snippet-section {
-    @apply py-16 bg-gray-50;
+    @apply py-16 ;
   }
 
   .news-snippet-container {
@@ -155,24 +115,33 @@
     @apply mt-8 text-lg text-gray-600;
   }
 
+  /* FlexiLearnPro Section */
+
+  .flexilearnpro-section {
+    @apply py-12 md:py-20 px-4 md:px-8 bg-gradient-to-br from-white via-purple-50 to-white;
+  }
+
+  .flexilearnpro-container {
+    @apply mx-auto px-4 md:px-8 max-w-7xl;
+  }
+
   /* About Page Sections - Enhanced with Animations */
   .about-section-container {
-    @apply max-w-7xl mx-auto px-4 py-16;
+    @apply max-w-7xl mx-auto px-4 py-20;
     animation: fadeIn 0.8s ease-out;
   }
 
   .about-section-title {
-    @apply text-4xl font-bold mb-8 text-center;
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-800;
+    @apply text-4xl font-bold mb-8 text-center text-purple-800;
   }
 
-  .about-section-subtitle {
-    @apply text-xl font-semibold mb-4 text-gray-800;
+  .about-section-header {
+    @apply text-xl font-semibold mb-4 text-purple-950;
     animation: slideRight 0.6s ease-out;
   }
 
   .about-section-text {
-    @apply text-lg text-gray-600 leading-relaxed mb-6;
+    @apply text-lg text-purple-900 leading-relaxed mb-6;
     animation: fadeIn 0.8s ease-out;
   }
 
@@ -184,7 +153,7 @@
   .about-card {
     @apply bg-white p-8 rounded-xl shadow-lg transition-all duration-500;
     transform-style: preserve-3d;
-    animation: cardFloat 3s ease-in-out infinite;
+
   }
 
   .about-card:hover {
@@ -197,12 +166,12 @@
   }
 
   .about-list-item {
-    @apply text-gray-600 hover:text-blue-600 transition-colors duration-300;
+    @apply text-gray-600 hover:text-purple-600 transition-colors duration-300;
     animation: slideRight 0.6s ease-out;
   }
 
   .about-highlight {
-    @apply bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl border border-blue-100 my-8 transform hover:scale-[1.02] transition-all duration-300;
+    @apply bg-gradient-to-br from-purple-50 to-white p-8 rounded-2xl border border-purple-100 my-8 transform hover:scale-[1.02] transition-all duration-300;
     animation: scaleIn 0.8s ease-out;
   }
 
@@ -218,7 +187,7 @@
 
   .timeline::before {
     content: '';
-    @apply absolute left-[20px] top-0 h-full w-0.5 bg-gradient-to-b from-blue-200 via-blue-400 to-blue-600;
+    @apply absolute left-[20px] top-0 h-full w-0.5 bg-gradient-to-b from-purple-200 via-purple-400 to-purple-600;
   }
 
   .timeline-item {
@@ -231,13 +200,13 @@
   }
 
   .timeline-dot {
-    @apply w-[18px] h-[18px] rounded-full bg-blue-600 border-4 border-white;
+    @apply w-[18px] h-[18px] rounded-full bg-purple-600 border-4 border-white;
     box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.2);
     animation: glow 2s ease-in-out infinite;
   }
 
   .timeline-date {
-    @apply text-lg font-semibold text-blue-600 mb-2;
+    @apply text-lg font-semibold text-purple-800 mb-2;
   }
 
   .timeline-content {
@@ -260,10 +229,9 @@
     @apply text-gray-600 hover:text-gray-900 transition-colors duration-200;
   }
 
-
   /* Micro-Credentials Section */
   .micro-credentials-section {
-    @apply py-20 bg-gradient-to-br from-white via-blue-50 to-white;
+    @apply py-20 bg-gradient-to-br from-white via-purple-50 to-white;
   }
 
   .micro-credentials-container {
@@ -271,7 +239,7 @@
   }
 
   .micro-credentials-title {
-    @apply text-4xl font-bold text-center mb-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-800;
+    @apply text-4xl font-bold text-center mb-8 bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-purple-800;
   }
 
   .micro-credentials-description {
@@ -283,8 +251,8 @@
   }
 
   .pqf-title {
-    @apply text-2xl font-semibold text-blue-800 mb-6;
-  }
+    @apply text-2xl font-semibold text-purple-800 mb-6;
+  } 
 
   .micro-credentials-grid {
     @apply grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12;
@@ -299,93 +267,12 @@
   }
 
   .micro-credentials-card-title {
-    @apply text-xl font-semibold text-blue-800 mb-3;
+    @apply text-xl font-semibold text-purple-800 mb-3;
   }
 
   .micro-credentials-card-description {
     @apply text-gray-600;
   }
-
-  /* Partnerships Section */
-  .partnerships-section {
-    @apply py-16;
-  }
-
-  .partnerships-title {
-    @apply text-3xl font-bold text-center mb-12;
-  }
-
-  .partnerships-description {
-    @apply text-lg text-gray-600 text-center max-w-4xl mx-auto mb-16;
-  }
-
-  /* Partners Section */
-  .partners-section {
-    @apply mb-20;
-  }
-
-  .partners-title {
-    @apply text-2xl font-semibold text-center mb-12;
-  }
-
-  .partners-grid {
-    @apply grid grid-cols-1 md:grid-cols-3 gap-12 items-center justify-items-center max-w-6xl mx-auto;
-  }
-
-  .partner-card {
-    @apply text-center;
-  }
-
-  .partner-logo {
-    @apply relative w-64 h-64;
-  }
-
-  .partner-logo-image {
-    @apply object-contain hover:scale-110 transition-transform duration-300;
-  }
-
-  .partner-name {
-    @apply mt-4 text-xl font-semibold;
-  }
-
-  .partner-description {
-    @apply text-gray-600;
-  }
-
-  /* Benefits Section */
-  .benefits-section {
-    @apply max-w-7xl mx-auto;
-  }
-
-  .benefits-title {
-    @apply text-2xl font-semibold text-center mb-12;
-  }
-
-  .benefits-grid {
-    @apply grid grid-cols-3 md:grid-cols-5 gap-6;
-  }
-
-  .benefit-card {
-    @apply bg-white rounded-xl shadow-lg p-4 transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
-  }
-
-  .benefit-image-container {
-    @apply relative w-full aspect-square mb-4 rounded-lg overflow-hidden;
-  }
-
-  .benefit-image {
-    @apply object-cover;
-  }
-
-  .benefit-title {
-    @apply font-semibold mb-2;
-  }
-
-  .benefit-description {
-    @apply text-sm text-gray-600;
-  }
-
-
 
 
 
@@ -401,7 +288,7 @@
 
   .process-icon {
     @apply w-16 h-16 mx-auto mb-4 rounded-full;
-    @apply bg-gradient-to-br from-blue-50 to-white;
+    @apply bg-gradient-to-br from-purple-50 to-white;
     @apply flex items-center justify-center text-3xl shadow-inner;
   }
 
@@ -457,7 +344,7 @@
 
   .pqf-table th {
     @apply px-6 py-4 text-left text-white font-semibold border-b;
-    @apply bg-gradient-to-r from-blue-600 to-blue-700;
+    @apply bg-gradient-to-r from-purple-600 to-purple-700;
   }
 
   .pqf-table td {
@@ -466,7 +353,7 @@
   }
 
   .pqf-table tr:hover td {
-    @apply bg-blue-50;
+    @apply bg-purple-50;
   }
 
 
@@ -479,7 +366,7 @@
 
   .stats-value {
     @apply text-4xl font-bold mb-2;
-    @apply bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-purple-600 to-purple-800 bg-clip-text text-transparent;
   }
 
   /* Animation Keyframes */
@@ -654,7 +541,7 @@
   /* Contact */
 
   .contact-section {
-    @apply relative isolate bg-gray-900 py-24 sm:py-32;
+    @apply relative isolate bg-gray-900 py-16 sm:py-24;
   }
 
   /* Background effects */
@@ -718,11 +605,11 @@
   }
 
   .form-title {
-    @apply text-4xl font-bold text-gray-800 mb-2;
+    @apply text-4xl font-bold text-purple-900 mb-2;
   }
 
   .form-subtitle {
-    @apply text-gray-600 mb-6;
+    @apply text-purple-950 mb-6;
   }
 
   .contact-form {
@@ -738,11 +625,11 @@
   }
 
   .input-container {
-    @apply relative border border-gray-300 rounded-md;
+    @apply relative border border-purple-300 rounded-md;
   }
 
   .input-container.focused {
-    @apply border-gray-500;
+    @apply border-purple-500;
   }
 
   .input-container.error {
@@ -754,7 +641,7 @@
   }
 
   .input-container.focused .input-label {
-    @apply text-xs -top-2 bg-white px-1 text-gray-700;
+    @apply text-xs -top-2 bg-white px-1 text-purple-700;
   }
 
   .form-input,
@@ -779,7 +666,7 @@
   }
 
   .checkbox-label {
-    @apply flex items-start gap-2 text-gray-600 cursor-pointer;
+    @apply flex items-start gap-2 text-purple-950 cursor-pointer;
   }
 
   .checkbox-input {
@@ -791,7 +678,7 @@
   }
 
   .checkbox-input:checked+.custom-checkbox {
-    @apply bg-gray-800 border-gray-800;
+    @apply bg-purple-950 border-purple-800;
   }
 
   .checkbox-input:checked+.custom-checkbox:after {
@@ -800,11 +687,11 @@
   }
 
   .privacy-policy-link {
-    @apply text-gray-700 font-medium underline;
+    @apply text-purple-950 font-medium underline;
   }
 
   .submit-button {
-    @apply w-full bg-gray-800 text-white py-3 rounded-md mt-4 font-medium tracking-wide hover:bg-gray-700 transition-colors;
+    @apply w-full bg-purple-950 text-white py-3 rounded-md mt-4 font-medium tracking-wide hover:bg-purple-700 transition-colors;
   }
 
   .privacy-policy-modal {
@@ -816,7 +703,7 @@
   }
 
   .close-button {
-    @apply absolute right-4 top-2 text-3xl text-gray-500 hover:text-gray-700;
+    @apply absolute right-4 top-2 text-3xl text-gray-500 hover:text-purple-950;
   }
 
   .privacy-policy-text {
@@ -832,7 +719,7 @@
   }
 
   .accept-button {
-    @apply w-full bg-gray-800 text-white py-2 rounded-md font-medium hover:bg-gray-700 transition-colors;
+    @apply w-full bg-purple-950 text-white py-2 rounded-md font-medium hover:bg-purple-800 transition-colors;
   }
 
 

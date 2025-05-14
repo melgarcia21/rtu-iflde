@@ -5,12 +5,8 @@ import ContactForm from "./sections/ContactForm";
 const Contact = () => {
   return (
     <section className="contact-section">
-      <h1 className="contact-title">Contact Us</h1>
-
-
       <ContactDetails />
       <ContactForm />
-
     </section>
   );
 };

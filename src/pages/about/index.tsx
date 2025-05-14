@@ -5,7 +5,7 @@ import ETEEAPExplained from './sections/ETEEAPExplained';
 import FlexiLearnPro from './sections/FlexiLearnPro';
 import MicroCredentials from './sections/MicroCredentials';
 import QualityAssurance from './sections/QualityAssurance';
-import Partnerships from './sections/Partnerships';
+import Partners from './sections/Partners';
 
 const About = () => {
   return (
@@ -17,13 +17,13 @@ const About = () => {
           content="Learn about RTU's Institute of Flexible Learning and Digital Education, our mission, programs, and partnerships." 
         />
       </Head>
-      <div className="bg-gradient-to-b from-white to-gray-50">
+      <div>
         <AboutInstitute />
         <FlexiLearnPro />
         <ETEEAPExplained />
         <MicroCredentials />
         <QualityAssurance />
-        <Partnerships />
+        <Partners />
       </div>
     </>
   );

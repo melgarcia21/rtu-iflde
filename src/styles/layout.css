@@ -25,7 +25,7 @@
     }
 
     .header-content {
-        @apply relative z-10 h-full flex flex-col p-4 md:p-10;
+        @apply relative z-10 h-full flex flex-col p-2 md:p-6;
     }
 
     /* Header Logo Section */
@@ -34,7 +34,7 @@
     }
 
     .header-logo {
-        @apply h-16 w-16 md:h-20 md:w-20 mr-3 md:mr-4 flex-shrink-0;
+        @apply h-12 w-12 md:h-16 md:w-16 mr-3 md:mr-4 flex-shrink-0;
     }
 
     .header-separator {
@@ -55,11 +55,11 @@
     }
 
     .header-center-section {
-        @apply flex items-center my-4 md:my-6 lg:my-8 ml-0 md:ml-16 lg:ml-24;
+        @apply flex items-center my-2 md:my-4 lg:my-6 ml-0 md:ml-12 lg:ml-20;
     }
 
     .header-icon {
-        @apply h-28 w-28 md:h-36 md:w-36 lg:h-40 lg:w-40 mr-4 md:mr-8 flex-shrink-0;
+        @apply h-24 w-24 md:h-32 md:w-32 lg:h-36 lg:w-36 mr-4 md:mr-8 flex-shrink-0;
     }
 
     .header-title {
@@ -77,16 +77,18 @@
     /* Navbar Styles --*/
     /* Main Navbar */
     .navbar {
-        @apply relative z-50 py-1 md:py-4 bg-[#35193E] text-white transition-all duration-300;
+        @apply relative z-50 py-4 md:py-4 bg-[#35193E] text-white transition-all duration-300;
     }
 
     .navbar-container {
-        @apply h-6 md:h-6 max-w-7xl mx-auto px-4 flex items-center justify-between;
+        @apply h-6 md:h-6 sm:h-8 max-w-7xl mx-auto px-4 flex items-center justify-between ;
     }
 
     /* Navbar Brand */
     .navbar-brand {
-        @apply text-lg md:text-2xl font-bold hover:text-purple-300;
+        @apply flex text-lg md:text-2xl font-bold hover:text-purple-300;
+        @apply gap-2;
+        align-items: center;
         font-family: 'Open Sans', sans-serif;
     }
 
@@ -109,8 +111,6 @@
         @apply content-[''] absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-100 ease-in-out;
     }
     
-
-
     .navbar-link:hover .link-text::after {
         @apply w-full;
     }
@@ -205,25 +205,7 @@
         @apply bg-gray-900 text-gray-400;
     }
 
-    .footer-container {
-        @apply max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8 text-center;
-    }
 
-    .footer-intro-label {
-        @apply text-indigo-400 text-sm font-medium mb-2;
-    }
-
-    .footer-heading {
-        @apply text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-4;
-    }
-
-    .footer-description {
-        @apply max-w-xl mx-auto text-base sm:text-lg md:text-lg mb-6;
-    }
-
-    .footer-cta-button {
-        @apply inline-block px-6 py-2 bg-indigo-500 text-white rounded-md hover:bg-indigo-400 transition;
-    }
 
     .footer-divider {
         @apply border-t border-gray-700;
@@ -235,7 +217,7 @@
 
 
     .footer-grid {
-        @apply max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-5 gap-8 text-sm;
+        @apply max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-sm;
     }
 
     .footer-column-title {

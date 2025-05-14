@@ -5,21 +5,6 @@ import { FaFacebookF, FaYoutube } from "react-icons/fa6";
 function Footer() {
   return (
     <footer className="footer">
-      <div className="footer-container">
-        <p className="footer-intro-label">Want to take micro credentials?</p>
-        <h2 className="footer-heading">
-          Upskill for your career
-          <br />
-          Inquire now
-        </h2>
-        <p className="footer-description">
-          FlexiLearnPro is RTU-IFLDE’s digital learning initiative, 
-          empowering students and professionals through flexible, accessible education.
-        </p>
-        <Link href="#" className="footer-cta-button">
-          Inquire now
-        </Link>
-      </div>
 
       <div className="footer-divider">
         <div className="footer-grid">
@@ -41,7 +26,7 @@ function Footer() {
           </div>
 
           <div>
-            <h4 className="footer-column-title">Programs</h4>
+            <h4 className="footer-column-title">Links</h4>
             <ul className="space-y-2">
               {[
                 "College of Arts and Science",
@@ -60,22 +45,9 @@ function Footer() {
           </div>
 
           <div>
-            <h4 className="footer-column-title">Support</h4>
-            <ul className="space-y-2">
-              {["Submit ticket", "Documentation", "Guides"].map((item) => (
-                <li key={item}>
-                  <Link href="#" className="footer-link">
-                    {item}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
             <h4 className="footer-column-title">University</h4>
             <ul className="space-y-2">
-              {["About", "Blog", "Jobs", "Press"].map((item) => (
+              {["Official Website", "RTU FB Page", "IFLDE FB Page"].map((item) => (
                 <li key={item}>
                   <Link href="#" className="footer-link">
                     {item}

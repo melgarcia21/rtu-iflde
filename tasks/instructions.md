@@ -43,8 +43,8 @@
 *   **Sections & Content:**
 
     *   **Hero Section (src/components/sections/HeroSection.tsx):**
-        *   **Content:** Mirroring the blue section in your image: "Welcome to FlexiLearnPro". Tagline: "Empowering flexible learning for professionals and students." Prominent Call-to-Action (CTA) Button: "Explore Our Programs" (links to Programs page).
-        *   **Design:** Clean, bold text. Maybe a subtle background pattern or keep it solid blue.
+        *   **Content:** Mirroring the purple section in your image: "Welcome to FlexiLearnPro". Tagline: "Empowering flexible learning for professionals and students." Prominent Call-to-Action (CTA) Button: "Explore Our Programs" (links to Programs page).
+        *   **Design:** Clean, bold text. Maybe a subtle background pattern or keep it solid purple.
 
     *   **Introduction / Who We Are (src/components/sections/IntroSection.tsx):**
         *   **Content:** Briefly introduce IFLDE. "Your partner in accessible and innovative education at RTU." Mention the focus on ETEEAP and future-forward programs like Micro-credentials. Highlight the commitment to quality based on research (mention FlexiLearnPro benchmarking).

@@ -8,7 +8,7 @@
   }
 
   .button-primary {
-    @apply bg-blue-800 hover:bg-blue-600;
+    @apply bg-purple-800 hover:bg-purple-600;
   }
 
   .button-secondary {
@@ -36,7 +36,7 @@
   }
 
   .card-link {
-    @apply text-blue-800 hover:underline;
+    @apply text-purple-800 hover:underline;
   }
 
   /* Stats Grid Styles */
@@ -50,7 +50,7 @@
   }
 
   .stat-value {
-    @apply text-4xl font-bold text-blue-600 mb-2;
+    @apply text-4xl font-bold text-purple-600 mb-2;
     background: linear-gradient(45deg, #2563eb, #1d4ed8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -78,7 +78,7 @@
   }
 
   .process-icon {
-    @apply w-16 h-16 flex items-center justify-center text-2xl bg-blue-100 rounded-full mb-4 shadow-md;
+    @apply w-16 h-16 flex items-center justify-center text-2xl bg-purple-100 rounded-full mb-4 shadow-md;
     animation: bounce 2s infinite;
   }
 
@@ -92,7 +92,7 @@
 
   /* Add connecting lines between steps */
   .process-step:not(:last-child):after {
-    @apply hidden md:block absolute top-8 -right-3 w-6 h-0.5 bg-blue-200;
+    @apply hidden md:block absolute top-8 -right-3 w-6 h-0.5 bg-purple-200;
     content: "";
   }
 

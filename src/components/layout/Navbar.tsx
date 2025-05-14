@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { useRouter } from "next/router";
 
 import {
@@ -104,7 +105,14 @@ const Navbar = () => {
       <nav className={`navbar ${isSticky ? "sticky-navbar" : ""}`}>
         <div className="navbar-container">
           {/* Brand */}
+
           <Link href="/" scroll={false} className="navbar-brand">
+            <Image
+              src="/images/header/iflde-logo.png"
+              alt="IFLDE Logo"
+              width={40}
+              height={40}
+            />
             IFLDE
           </Link>
 
@@ -118,7 +126,9 @@ const Navbar = () => {
                 className="navbar-link group"
               >
                 <span className="icon-wrapper">
-                  {router.pathname === link.href ? link.iconSolid : link.iconOutline}
+                  {router.pathname === link.href
+                    ? link.iconSolid
+                    : link.iconOutline}
                 </span>
                 <span className="link-text">{link.label}</span>
               </Link>
@@ -127,7 +137,7 @@ const Navbar = () => {
 
           <div className="flex items-center space-x-4">
             {/* Mobile Menu Button */}
-            <button 
+            <button
               className="mobile-menu-button"
               onClick={handleMenuToggle}
               aria-label="Toggle menu"
@@ -143,7 +153,9 @@ const Navbar = () => {
 
         {/* Mobile Navigation Menu */}
         <div
-          className={`mobile-menu ${isMobileMenuOpen ? 'flex' : ''} ${isClosing ? 'closing' : ''}`}
+          className={`mobile-menu ${isMobileMenuOpen ? "flex" : ""} ${
+            isClosing ? "closing" : ""
+          }`}
           role="dialog"
           aria-hidden={!isMobileMenuOpen}
         >
@@ -157,7 +169,9 @@ const Navbar = () => {
               onClick={handleLinkClick}
             >
               <span className="icon-wrapper">
-                {router.pathname === link.href ? link.iconSolid : link.iconOutline}
+                {router.pathname === link.href
+                  ? link.iconSolid
+                  : link.iconOutline}
               </span>
               <span className="link-text">{link.label}</span>
             </Link>

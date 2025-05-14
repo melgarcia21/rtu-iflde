@@ -15,7 +15,7 @@ const chipVariants = cva(
       },
       color: {
         default: "bg-gray-200 text-gray-800",
-        primary: "bg-blue-500 text-white",
+        primary: "bg-purple-500 text-white",
         secondary: "bg-purple-500 text-white",
         success: "bg-green-500 text-white",
         warning: "bg-yellow-500 text-black",

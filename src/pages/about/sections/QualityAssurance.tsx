@@ -11,7 +11,7 @@ const QualityAssurance = () => {
 
       <div className="about-grid">
         <div className="about-card">
-          <h3 className="about-section-subtitle">Internal QA Processes</h3>
+          <h3 className="about-section-header">Internal QA Processes</h3>
           <ul className="about-list">
             <li className="about-list-item">Regular program review and assessment</li>
             <li className="about-list-item">Faculty development and training</li>
@@ -21,7 +21,7 @@ const QualityAssurance = () => {
         </div>
 
         <div className="about-card">
-          <h3 className="about-section-subtitle">External QA Standards</h3>
+          <h3 className="about-section-header">External QA Standards</h3>
           <ul className="about-list">
             <li className="about-list-item">CHED compliance and recognition</li>
             <li className="about-list-item">Industry partner validation</li>
@@ -31,7 +31,7 @@ const QualityAssurance = () => {
         </div>
 
         <div className="about-card">
-          <h3 className="about-section-subtitle">Assessment Methods</h3>
+          <h3 className="about-section-header">Assessment Methods</h3>
           <ul className="about-list">
             <li className="about-list-item">Performance-based evaluation</li>
             <li className="about-list-item">Competency verification</li>
@@ -42,37 +42,27 @@ const QualityAssurance = () => {
       </div>
 
       <div className="about-highlight">
-        <h3 className="about-section-subtitle">Key Quality Measures</h3>
+        <h3 className="about-section-header">Key Quality Measures</h3>
         <div className="about-grid">
           <div>
-            <h4 className="about-section-subtitle">Program Standards</h4>
+            <h4 className="about-section-header">Program Standards</h4>
             <p className="about-section-text">
               Alignment with Philippine Qualifications Framework (PQF) and CHED guidelines
             </p>
           </div>
           <div>
-            <h4 className="about-section-subtitle">Learning Support</h4>
+            <h4 className="about-section-header">Learning Support</h4>
             <p className="about-section-text">
               Comprehensive academic and technical support systems for all students
             </p>
           </div>
           <div>
-            <h4 className="about-section-subtitle">Continuous Improvement</h4>
+            <h4 className="about-section-header">Continuous Improvement</h4>
             <p className="about-section-text">
               Regular program updates based on stakeholder feedback and industry needs
             </p>
           </div>
         </div>
-      </div>
-
-      <div className="about-section-container">
-        <h3 className="about-section-subtitle">Documentation & Transparency</h3>
-        <ul className="about-list">
-          <li className="about-list-item">Clear documentation of quality processes</li>
-          <li className="about-list-item">Regular reporting to stakeholders</li>
-          <li className="about-list-item">Public access to program information</li>
-          <li className="about-list-item">Transparent assessment criteria</li>
-        </ul>
       </div>
     </div>
   );

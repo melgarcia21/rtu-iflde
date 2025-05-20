@@ -1,6 +1,6 @@
 interface ButtonProps {
   label: string;
-  onClick?: () => void;  // Make onClick optional
+  onClick?: () => void;
   className?: string;
 }
 

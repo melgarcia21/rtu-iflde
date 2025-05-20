@@ -35,5 +35,14 @@ export const newsPosts: NewsPost[] = [
     embedUrl: 'https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Frtuiflde%2Fposts%2Fpfbid02B7oRazd5wbSKRp26XWRKRi8pEvCFnRGweHGvDSSjgrshiVs53v2J32KCuRqj6MVql&show_text=true&width=500',
     fbCaption: '𝑰𝑭𝑳𝑫𝑬 𝒍𝒂𝒖𝒏𝒄𝒉𝒆𝒔 𝑭𝒍𝒆𝒙𝒊𝑳𝒆𝒂𝒓𝒏𝑷𝒓𝒐 𝒂𝒕 𝑷𝑺𝑼, 𝑫𝑴𝑴𝑴𝑺𝑼, 𝒂𝒏𝒅 𝑪𝑳𝑺𝑼\nThe 𝐈𝐧𝐬𝐭𝐢𝐭𝐮𝐭𝐞 𝐨𝐟 𝐅𝐥𝐞𝐱𝐢𝐛𝐥𝐞 𝐋𝐞𝐚𝐫𝐧𝐢𝐧𝐠 𝐚𝐧𝐝 𝐃𝐢𝐠𝐢𝐭𝐚𝐥 𝐄𝐝𝐮𝐜𝐚𝐭𝐢𝐨𝐧 (𝐈𝐅𝐋𝐃𝐄) conducted the first phase of benchmarking activities...',
     fullContent: 'Full article content will be added here...'
+  },
+  {
+    id: 'e-rtu-accounts',
+    title: 'E-RTU Accounts Now Available',
+    content: 'Now that you already have your e-RTU accounts, maximize your experience by exploring the different features of e-RTU!',
+    link: '/news/e-rtu-accounts',
+    embedUrl: 'https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Frtuiflde%2Fposts%2Fpfbid02tQEdd8fVKg9Kt4MTi7fzU15y3ZUNEHdiFYWg8seS4iz6iqjyUBQ1cYirVrqjLt8gl&show_text=true&width=500',
+    fbCaption: 'Now that you already have your e-RTU accounts, maximize your experience by exploring the different features of e-RTU! From logging in to the platform to accessing your enrolled courses to taking assessments and many more, be guided by our Reference Material for students and faculty!',
+    fullContent: 'Full article content will be added here...'
   }
 ];

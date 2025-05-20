@@ -38,8 +38,6 @@ const NewsArticle = () => {
         <iframe
           src={article.embedUrl}
           className="w-full min-h-[800px] md:min-h-[1000px] border-0"
-          scrolling="yes"
-          frameBorder="0"
           allowFullScreen={true}
           allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
           style={{ WebkitOverflowScrolling: 'touch' }}

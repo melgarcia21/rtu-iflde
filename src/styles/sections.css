@@ -223,9 +223,6 @@
     }
   }
 
-  .timeline-content {
-    @apply text-gray-600 hover:text-gray-900 transition-colors duration-200;
-  }
 
   /* Micro-Credentials Section */
   .micro-credentials-section {

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 interface CardProps {
   title: string;
@@ -10,6 +10,11 @@ interface CardProps {
 
 const Card = ({ title, content, link, embedUrl, fbCaption = '' }: CardProps) => {
   const [isLoading, setIsLoading] = useState(true);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   const getFacebookPostUrl = (embedUrl: string) => {
     try {
@@ -32,7 +37,7 @@ const Card = ({ title, content, link, embedUrl, fbCaption = '' }: CardProps) => 
 
   return (
     <div className="card bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden h-full flex flex-col">
-      {embedUrl && (
+      {embedUrl && isMounted && (
         <div className="card-embed w-full relative pt-[75%]">
           {isLoading && (
             <div className="absolute inset-0 flex items-center justify-center bg-gray-50">
@@ -70,7 +75,7 @@ const Card = ({ title, content, link, embedUrl, fbCaption = '' }: CardProps) => 
         <h3 className="text-lg md:text-xl font-semibold mb-2">{title}</h3>
         <p className="text-gray-600 mb-3 text-sm line-clamp-2">{content}</p>
         <a 
-          href={embedUrl ? getFacebookPostUrl(embedUrl) : link}
+          href={embedUrl && isMounted ? getFacebookPostUrl(embedUrl) : link}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center px-3 py-1.5 bg-[#400040] text-white text-sm rounded-md hover:bg-[#500050] transition-colors duration-200 group w-fit mt-auto"

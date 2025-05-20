@@ -1,11 +1,23 @@
 import Image from "next/image";
 
 const stats = [
-  { name: 'We identify your educational requirements and career goals', value: 'Assess Needs' },
-  { name: 'Programs are crafted using research-backed methods and benchmarking', value: 'Designed Programs' },
-  { name: 'Learn through various modalities that fit your schedule', value: 'Deliver Flexibly' },
-  { name: 'Continuous monitoring and improvement of learning outcomes', value: 'Ensures Quality' },
-]
+  {
+    name: "We identify your educational requirements and career goals",
+    value: "Assess Needs",
+  },
+  {
+    name: "Programs are crafted using research-backed methods and benchmarking",
+    value: "Designed Programs",
+  },
+  {
+    name: "Learn through various modalities that fit your schedule",
+    value: "Deliver Flexibly",
+  },
+  {
+    name: "Continuous monitoring and improvement of learning outcomes",
+    value: "Ensures Quality",
+  },
+];
 
 export default function HeroSection() {
   return (
@@ -14,8 +26,8 @@ export default function HeroSection() {
         alt="IFLDE building front"
         src="/images/gallery/mab-floor.jpg"
         className="absolute inset-0 -z-10 size-full object-cover object-right md:object-center "
-        width={2432}
-        height={1442}
+        width={1459}
+        height={865}
       />
       <div
         aria-hidden="true"
@@ -24,7 +36,7 @@ export default function HeroSection() {
         <div
           style={{
             clipPath:
-              'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+              "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
           }}
           className="aspect-1097/845 w-[68.5625rem] bg-linear-to-tr from-[#ff4694] to-[#776fff] opacity-20"
         />
@@ -36,16 +48,22 @@ export default function HeroSection() {
         <div
           style={{
             clipPath:
-              'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+              "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
           }}
           className="aspect-1097/845 w-[68.5625rem] bg-linear-to-tr from-[#ff4694] to-[#776fff] opacity-20"
         />
       </div>
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
         <div className="mx-auto lg:mx-0">
-          <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-5xl">What is FlexiLearnPro?</h2>
+          <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-5xl">
+            What is FlexiLearnPro?
+          </h2>
           <p className="mt-8 text-lg font-medium text-pretty text-white sm:text-xl/8">
-            The Institute of Flexible Learning and Digital Education (IFLDE) at RTU pioneers flexible learning solutions through our FlexiLearnPro initiative. We focus on delivering high-quality education through ETEEAP and innovative micro-credential programs, designed to meet the evolving needs of both professionals and students.
+            The Institute of Flexible Learning and Digital Education (IFLDE) at
+            RTU pioneers flexible learning solutions through our FlexiLearnPro
+            initiative. We focus on delivering high-quality education through
+            ETEEAP and innovative micro-credential programs, designed to meet
+            the evolving needs of both professionals and students.
           </p>
         </div>
         <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
@@ -53,12 +71,14 @@ export default function HeroSection() {
             {stats.map((stat) => (
               <div key={stat.name} className="flex flex-col-reverse gap-1">
                 <dt className="text-base/7 text-white">{stat.name}</dt>
-                <dd className="text-2xl font-semibold tracking-tight text-white">{stat.value}</dd>
+                <dd className="text-2xl font-semibold tracking-tight text-white">
+                  {stat.value}
+                </dd>
               </div>
             ))}
           </dl>
         </div>
       </div>
     </div>
-  )
+  );
 }

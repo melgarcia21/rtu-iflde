@@ -40,8 +40,8 @@ export default function Introduction() {
               className={`absolute inset-0 size-full object-cover object-right md:object-center transition-opacity duration-1000 ease-in-out ${
                 index === currentImage ? "opacity-100" : "opacity-0"
               }`}
-              width={2432}
-              height={1442}
+              width={1459}
+              height={865}
               priority={index === 0}
             />
           ))}

@@ -172,10 +172,7 @@ const ContactForm: React.FC = () => {
 
   return (
     <div className="contact-section">
-      {/* Background effects */}
-      <div className="background-top-effect">
-        <div className="gradient-blob" />
-      </div>
+
 
       <div className="content-container">
         <div className="two-column-layout">
@@ -421,10 +418,8 @@ const ContactForm: React.FC = () => {
         </div>
       </div>
 
-      {/* Bottom background effect */}
-      <div className="background-bottom-effect" aria-hidden="true">
-        <div className="gradient-blob-bottom" />
-      </div>
+
+
     </div>
   );
 };

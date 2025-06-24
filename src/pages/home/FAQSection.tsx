@@ -1,4 +1,8 @@
+/* src\pages\home\FAQSection.tsx */
+
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/shadcnUI/accordion";
+
+
 import faqs from "@/data/about/faqs.json";
 
 const FAQSection = () => {

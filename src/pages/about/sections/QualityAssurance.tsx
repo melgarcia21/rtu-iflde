@@ -1,3 +1,5 @@
+/* src\pages\about\sections\QualityAssurance.tsx */
+
 import React from 'react';
 
 const QualityAssurance = () => {

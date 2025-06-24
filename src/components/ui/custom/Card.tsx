@@ -1,3 +1,5 @@
+/* src\components\ui\custom\Card.tsx */
+
 import { useState, useEffect } from 'react';
 
 interface CardProps {

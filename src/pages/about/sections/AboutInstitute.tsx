@@ -1,3 +1,5 @@
+/* src\pages\about\sections\AboutInstitute.tsx */
+
 import React from 'react';
 import { useIntersectionObserver } from '@/hooks/useIntersectionObserver';
 import clsx from 'clsx';

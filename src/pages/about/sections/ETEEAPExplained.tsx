@@ -1,3 +1,5 @@
+/* src\pages\about\sections\ETEEAPExplained.tsx */
+
 import React from 'react';
 
 import ProcessDiagram from '@/components/ui/custom/ProcessDiagram';

@@ -1,3 +1,5 @@
+/* src\styles\layout.css */
+
 @import "tailwindcss";
 
 @layer layout {
@@ -243,5 +245,4 @@
     .footer-social-icon {
         @apply hover:text-white text-lg;
     }
-
 }

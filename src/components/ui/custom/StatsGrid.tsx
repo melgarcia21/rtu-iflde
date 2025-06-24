@@ -1,3 +1,5 @@
+/* src\components\ui\custom\StatsGrid.tsx */
+
 import React from 'react';
 
 const stats = [

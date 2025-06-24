@@ -1,3 +1,5 @@
+/* src\pages\home\Introduction.tsx */
+
 import Image from "next/image";
 import { useState, useEffect } from "react";
 

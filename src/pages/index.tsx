@@ -1,3 +1,5 @@
+/* src\pages\index.tsx */
+
 import Introduction from "./home/Introduction";
 import HeroSection from "./home/HeroSection";
 import Highlights from "./home/Highlights";

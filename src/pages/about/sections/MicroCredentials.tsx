@@ -1,3 +1,5 @@
+/* src\pages\about\sections\MicroCredentials.tsx */
+
 import React from 'react';
 import PQFTable from '@/components/ui/custom/PQFTable';
 import StatsGrid from '@/components/ui/custom/StatsGrid';

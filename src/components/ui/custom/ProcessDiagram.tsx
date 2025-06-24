@@ -1,3 +1,5 @@
+/* src\components\ui\custom\ProcessDiagram.tsx */
+
 import React from 'react';
 
 const ProcessDiagram = () => {

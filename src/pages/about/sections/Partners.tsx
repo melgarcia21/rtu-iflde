@@ -1,3 +1,5 @@
+/* src\pages\about\sections\Partners.tsx */
+
 import Image from 'next/image';
 
 export default function Partners() {

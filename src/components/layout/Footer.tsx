@@ -1,3 +1,5 @@
+/* src\components\layout\Footer.tsx */
+
 import Link from "next/link";
 import Image from "next/image";
 import { FaFacebookF, FaYoutube } from "react-icons/fa6";

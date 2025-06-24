@@ -1,3 +1,5 @@
+/* src\pages\home\NewsSnippet.tsx */
+
 import React from 'react';
 import Card from '@/components/ui/custom/Card';
 import Link from 'next/link';

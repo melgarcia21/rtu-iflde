@@ -1,3 +1,5 @@
+/* src\components\ui\custom\PQFTable.tsx */
+
 import React from 'react';
 
 const PQFTable = () => {

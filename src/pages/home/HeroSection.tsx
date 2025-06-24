@@ -1,3 +1,5 @@
+/* src\pages\home\HeroSection.tsx */
+
 import Image from "next/image";
 
 const stats = [

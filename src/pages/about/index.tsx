@@ -8,7 +8,7 @@ import FlexiLearnPro from './sections/FlexiLearnPro';
 import MicroCredentials from './sections/MicroCredentials';
 import QualityAssurance from './sections/QualityAssurance';
 import Partners from './sections/Partners';
-import { ArrowUpIcon } from '@heroicons/react/24/outline';
+import { ArrowUpIcon } from '@heroicons/react/24/outline'; 
 
 const About = () => {
   // State to control button visibility

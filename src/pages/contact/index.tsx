@@ -1,6 +1,7 @@
+/* src\pages\contact\index.tsx */
+
 import ContactDetails from "./sections/ContactDetails";
 import ContactForm from "./sections/ContactForm";
-// import MapEmbed from "./sections/MapEmbed";
 
 const Contact = () => {
   return (

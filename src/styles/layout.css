@@ -1,11 +1,10 @@
-/* src\styles\layout.css */
+/* src/styles/layout.css */
 
 @import "tailwindcss";
 
 @layer layout {
-
     /* Base Layout Styles
-  ----------------------------------------*/
+    ----------------------------------------*/
     html,
     body {
         @apply h-full;
@@ -19,124 +18,30 @@
         @apply flex-grow;
     }
 
-    /* Header Styles
-  ----------------------------------------*/
-    .header-section {
-        @apply relative overflow-hidden bg-cover bg-center text-white font-sans;
-        background-image: url('/images/header/rtu-iflde-cover.png');
-    }
-
-    .header-content {
-        @apply relative z-10 h-full flex flex-col p-2 md:p-6;
-    }
-
-    /* Header Logo Section */
-    .header-logo-section {
-        @apply flex items-center mb-auto;
-    }
-
-    .header-logo {
-        @apply h-12 w-12 md:h-16 md:w-16 mr-3 md:mr-4 flex-shrink-0;
-    }
-
-    .header-separator {
-        @apply h-10 w-px md:h-12 mr-3 md:mr-4 bg-white;
-    }
-
-    /* Header Text Content */
-    .header-university-text {
-        @apply flex flex-col justify-center;
-    }
-
-    .header-university-name {
-        @apply text-sm md:text-base lg:text-lg font-bold leading-tight;
-    }
-
-    .header-university-location {
-        @apply text-xs md:text-sm;
-    }
-
-    .header-center-section {
-        @apply flex items-center my-2 md:my-4 lg:my-6 ml-0 md:ml-12 lg:ml-20;
-    }
-
-    .header-icon {
-        @apply h-24 w-24 md:h-32 md:w-32 lg:h-36 lg:w-36 mr-4 md:mr-8 flex-shrink-0;
-    }
-
-    .header-title {
-        @apply text-2xl md:text-3xl lg:text-4xl font-bold leading-tight;
-    }
-
-    .header-horizontal-line {
-        @apply w-full md:w-3/4 h-px my-2 md:my-3 bg-white;
-    }
-
-    .header-subtitle {
-        @apply text-sm md:text-base lg:text-lg;
-    }
-
-    /* Navbar Styles --*/
-    /* Main Navbar */
+    /* Navbar Dynamic Styles
+    ----------------------------------------*/
+    /* Main navbar container styling */
     .navbar {
         @apply relative z-50 py-4 md:py-4 bg-[#35193E] text-white transition-all duration-300;
     }
 
-    .navbar-container {
-        @apply h-6 md:h-6 sm:h-8 max-w-7xl mx-auto px-4 flex items-center justify-between ;
+    /* Sticky state for the navbar */
+    .sticky-navbar {
+        @apply fixed top-0 left-0 w-full z-50 bg-[#35193E] shadow-lg;
     }
 
-    /* Navbar Brand */
-    .navbar-brand {
-        @apply flex text-lg md:text-2xl font-bold hover:text-purple-300;
-        @apply gap-2;
-        align-items: center;
-        font-family: 'Open Sans', sans-serif;
-    }
-
-    /* Desktop Navigation Links */
-    .navbar-links {
-        @apply hidden md:flex items-center space-x-8;
-    }
-
-    .navbar-link {
-        @apply flex items-center space-x-2 relative text-base md:text-lg font-medium;
-    }
-
-    /* Link Text & Hover Effects */
-    .link-text {
-        @apply relative text-sm font-semibold text-white uppercase antialiased;
-        font-family: 'Open Sans', sans-serif;
-    }
-
+    /* Link hover underline effect */
     .link-text::after {
         @apply content-[''] absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-100 ease-in-out;
     }
-    
-    .navbar-link:hover .link-text::after {
+
+    /* The 'group' class on the parent Link component triggers this hover effect */
+    .group:hover .link-text::after {
         @apply w-full;
     }
 
-    /* Icons */
-    .navbar-icon {
-        @apply h-4 w-4 md:h-6 md:w-6;
-    }
-
-    .icon-wrapper {
-        @apply relative w-5 h-5 md:w-6 md:h-6;
-    }
-
-    /* Profile Section */
-    .navbar-actions {
-        @apply flex items-center space-x-4;
-    }
-
-    /* Mobile Menu Button */
-    .mobile-menu-button {
-        @apply flex md:hidden items-center justify-center p-2 text-white hover:bg-purple-700 rounded-lg transition-colors;
-    }
-
-    /* Mobile Navigation Menu */
+    /* Mobile Menu Animations
+    ----------------------------------------*/
     .mobile-menu {
         @apply absolute top-full left-0 w-full z-40 bg-[#35193E] shadow-lg md:hidden transform transition-all duration-300 ease-in-out;
         transform: translateY(-10%);
@@ -190,59 +95,5 @@
     .mobile-menu.closing .mobile-menu-link {
         opacity: 0;
         transform: translateY(-10px);
-    }
-
-    /* Sticky Navbar */
-    .sticky-navbar {
-        @apply fixed top-0 left-0 w-full z-50 bg-[#35193E] shadow-lg;
-    }
-
-    .sticky-placeholder {
-        @apply h-[48px] md:h-[100px];
-    }
-
-    /* Footer */
-
-    .footer {
-        @apply bg-gray-900 text-gray-400;
-    }
-
-
-
-    .footer-divider {
-        @apply border-t border-gray-700;
-    }
-
-    .footer-logos {
-        @apply flex gap-2;
-    }
-
-
-    .footer-grid {
-        @apply max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-sm;
-    }
-
-    .footer-column-title {
-        @apply text-white font-semibold mb-4;
-    }
-
-    .footer-link {
-        @apply hover:text-gray-200 transition;
-    }
-
-    .footer-bottom {
-        @apply max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm;
-    }
-
-    .footer-copyright {
-        @apply text-gray-500;
-    }
-
-    .footer-social-icons {
-        @apply flex gap-4 text-gray-400;
-    }
-
-    .footer-social-icon {
-        @apply hover:text-white text-lg;
     }
 }

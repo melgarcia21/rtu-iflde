@@ -94,6 +94,7 @@ The application uses JSON files in the `data` directory to manage dynamic conten
 - **Programs**: Listed on the programs page, sourced from `programs.json`.
 - **FAQs**: Displayed on the FAQ section of the home page, sourced from `faqs.json`.
 
+
 # Conclusion
 
 This documentation provides an updated overview of the FlexiLearnPro project, its structure, and its key components and pages. The project is designed to offer flexible online learning solutions and includes various features to support students and professionals in their learning journey.
